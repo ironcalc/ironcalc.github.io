@@ -40,7 +40,7 @@ We aim on having an MVP by January 15th. Keep your eyes open for this space.
 
 ## For the impatient. I can't wait
 
-The engine behind IronCalc is still deployed at:
+You can try it out today. Running entirely in your browser:
 
 https://playground.ironcalc.com/
 
