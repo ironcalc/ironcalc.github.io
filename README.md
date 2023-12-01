@@ -42,7 +42,11 @@ We aim on having an MVP by January 15th. Keep your eyes open for this space.
 
 The engine behind IronCalc is still deployed at:
 
-https://www.equalto.com/suresheet
+https://playground.ironcalc.com/
+
+See also the base engine code at:
+
+https://github.com/ironcalc/IronCalc
 
 
 ## Who
