@@ -51,4 +51,4 @@ https://github.com/ironcalc/IronCalc
 
 ## Who
 
-IronCalc is developed by [Nicolás Hatcher](https://wwww.nhatcher.com) with lots of help form the designer [Daniel González-Albo](https://www.dg-ac.com/)
+IronCalc is developed by [Nicolás Hatcher](https://www.nhatcher.com) with lots of help form the designer [Daniel González-Albo](https://www.dg-ac.com/)
