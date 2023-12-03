@@ -12,6 +12,12 @@ ul ul {
 h1 {
   font-size: 2em;
 }
+h1 div {
+  font-size: 0.6em;
+}
+h1 span {
+  color: #F2C94C;
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -51,7 +57,7 @@ h6 {
   margin: 1.8em 0;
   line-height: 1.33;
 }
-h1:after,
+
 h2:after {
   content: "";
   display: block;
