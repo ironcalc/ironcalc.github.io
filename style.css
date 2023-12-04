@@ -2,39 +2,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body,
-ol ol,
-ol ul,
-ul ol,
-ul ul {
+body {
   margin: 0;
 }
-h1 {
-  font-size: 2em;
-}
-h1 div {
-  font-size: 0.6em;
-}
-h1 span {
-  color: #F2C94C;
-}
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-  border: 0;
-  border-top: 1px solid hsla(0, 0%, 50%, 0.33);
-  margin: 2em 0;
-}
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  color: #0c93e4;
-  text-decoration: underline;
-  text-decoration-skip: ink;
-}
-body,
-html {
+
+body, html {
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
   font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
@@ -43,17 +15,49 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-ol,
-p,
-ul {
+
+
+.html {
+  margin-bottom: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 750px;
+}
+
+
+h1 {
+  font-size: 2em;
+}
+
+h1 div {
+  font-size: 0.6em;
+}
+
+h1 span {
+  color: #F2C94C;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #0c93e4;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+
+p, ul {
   margin: 1.2em 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+h1, h2 {
   margin: 1.8em 0;
   line-height: 1.33;
 }
@@ -64,16 +68,4 @@ h2:after {
   position: relative;
   top: 0.33em;
   border-bottom: 1px solid hsla(0, 0%, 50%, 0.33);
-}
-a:focus,
-a:hover {
-  text-decoration: none;
-}
-.html {
-  margin-bottom: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 750px;
 }
