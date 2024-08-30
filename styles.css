@@ -415,6 +415,27 @@ button.back-to-top .lucide {
 
 /* badges */
 
+.badge-info {
+  color: var(--grey-600);
+  font-size: 12px;
+  text-align: center;
+  max-width: 460px;
+  border: 1px var(--grey-200) solid;
+  border-radius: 8px;
+  padding: 12px 8px 12px 8px;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(1px);
+}
+
+.badge-info p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.badge-info:hover {
+  border: 1px var(--grey-400) solid;
+}
+
 .badge-md {
   display: flex;
   flex-direction: row;
