@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a .dark {
@@ -111,6 +111,24 @@ a.active {
 
 .white .lucide {
   color: white;
+}
+
+.grey {
+  color: var(--grey-500);
+}
+
+.grey .lucide {
+  color: var(--grey-500);
+}
+
+/* font-weight */
+
+.font-w-400 {
+  font-weight: 400;
+}
+
+.font-w-600 {
+  font-weight: 600;
 }
 
 /* flexbox */
@@ -178,6 +196,10 @@ a.active {
 
 .j-content-center {
   justify-content: center;
+}
+
+.j-content-space-between {
+  justify-content: space-between;
 }
 
 /* spacers */
@@ -282,6 +304,17 @@ a.active {
   border-radius: 20px;
 }
 
+/* opacity */
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-50:hover {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
 /* backgrounds */
 
 .bg-logo-center {
@@ -336,6 +369,15 @@ button {
 button:hover {
   background: var(--primary-dark);
   margin: -2px 0px 2px 0px;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button a:hover {
+  text-decoration: none;
 }
 
 button.secondary {
@@ -495,6 +537,14 @@ button.back-to-top .lucide {
   font-size: 12px;
 }
 
+.p-14 {
+  font-size: 14px;
+}
+
+.p-16 {
+  font-size: 16px;
+}
+
 .p-20 {
   font-size: 20px;
 }
@@ -507,6 +557,12 @@ button.back-to-top .lucide {
   font-family: "Zeyada", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+/* text-wrap */
+
+.text-pretty {
+  text-wrap: pretty;
 }
 
 /* top navigation */
@@ -1143,4 +1199,44 @@ h4 {
   #footer-logo {
     flex-direction: row;
   }
+}
+
+/* Button-styled anchor tags */
+a.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  background: var(--primary-main);
+  color: var(--primary-contrastText);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 12px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+  margin: 0px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 2px 0px;
+  text-wrap: nowrap;
+  text-decoration: none;
+}
+
+a.button:hover {
+  background: var(--primary-dark);
+  margin: -2px 0px 2px 0px;
+  text-decoration: none;
+}
+
+a.button.secondary {
+  background: transparent;
+  backdrop-filter: blur(1.5px);
+  color: var(--dark);
+  border: 1px var(--info-light) solid;
+}
+
+a.button.secondary:hover {
+  background: var(--info-light);
+  text-decoration: none;
 }
