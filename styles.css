@@ -772,6 +772,7 @@ section.grey {
   height: 192px;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 2px 0px;
   cursor: default;
+  text-wrap: pretty;
 }
 
 .card:hover {
