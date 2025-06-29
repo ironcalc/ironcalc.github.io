@@ -1068,6 +1068,16 @@ h4 {
     display: block;
   }
 
+  .mobile-menu a.button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mobile-menu a.button:hover {
+    margin-top: 16px;
+    margin: 0px;
+  }
+
   h1 {
     font-size: 9vw;
     line-height: 110%;
@@ -1180,7 +1190,7 @@ h4 {
     flex-direction: column;
   }
 
-  #funding .flex-h {
+  #funding.flex-h {
     flex-direction: column-reverse;
   }
 
@@ -1199,6 +1209,12 @@ h4 {
 
   #footer-logo {
     flex-direction: row;
+  }
+
+  #footer-socials {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
   }
 }
 
