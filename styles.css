@@ -467,10 +467,11 @@ button.back-to-top .lucide {
   text-align: center;
   max-width: 460px;
   border: 1px var(--grey-200) solid;
-  border-radius: 8px;
-  padding: 12px 8px 12px 8px;
+  border-radius: 24px;
+  padding: 4px 8px 4px 8px;
   transition: all 0.2s ease-in-out;
   backdrop-filter: blur(1px);
+  line-height: 1;
 }
 
 .badge-info p {
@@ -657,6 +658,10 @@ header {
   background-size: 80%;
 }
 
+header.no-bg {
+  background-image: none;
+}
+
 .hero {
   max-width: 1200px;
   margin: -76px auto 0px auto;
@@ -701,7 +706,10 @@ section {
   padding: 32px;
   gap: 24px;
   margin: 0px auto;
-  overflow: hidden;
+}
+
+section#roadmap-overview {
+  overflow: visible;
 }
 
 section.grey {
@@ -958,10 +966,22 @@ h1 {
   line-height: 110%;
 }
 
+h1.medium {
+  font-size: 48px;
+}
+
 h2 {
   font-size: 28px;
   line-height: 110%;
   font-weight: 300;
+}
+
+h2.medium {
+  font-size: 24px;
+}
+
+h2.small {
+  font-size: 18px;
 }
 
 h2 .lucide {
@@ -973,6 +993,10 @@ h3 {
   font-size: 22px;
   line-height: 120%;
   font-weight: 400;
+}
+
+h3.medium {
+  font-size: 16px;
 }
 
 h4 {
@@ -1083,8 +1107,24 @@ h4 {
     line-height: 110%;
   }
 
+  h1.medium {
+    font-size: 36px;
+  }
+
+  h2.medium {
+    font-size: 20px;
+  }
+
+  h2.small {
+    font-size: 16px;
+  }
+
   .hero {
     padding: 156px 20px 0px 20px;
+  }
+  
+  #roadmap-page .hero {
+    padding: 100px 20px 40px 20px;
   }
 
   .badge-md {
@@ -1181,9 +1221,19 @@ h4 {
     width: 16px;
   }
 
+  .spacer-80.no-shrink {
+    height: 40px;
+    width: 40px;
+  }
+
   .spacer-48 {
     height: 16px;
     width: 16px;
+  }
+
+  .spacer-48.no-shrink {
+    height: 24px;
+    width: 24px;
   }
 
   section .grey .section-content .flex-h {
@@ -1256,4 +1306,43 @@ a.button.secondary {
 a.button.secondary:hover {
   background: var(--info-light);
   text-decoration: none;
+}
+
+/* Roadmap Layout */
+.roadmap-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+  position: relative;
+  line-height: 1.5;
+}
+
+.roadmap-left {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  align-self: start;
+  z-index: 10;
+}
+
+.roadmap-left h2.sticky {
+  margin: 0;
+  padding: 0;
+}
+
+.roadmap-right {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .roadmap-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .roadmap-left {
+    position: static;
+  }
+
 }

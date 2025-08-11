@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roadmap - IronCalc</title>
+  <meta
+    name="description"
+    content="Explore IronCalc's development roadmap and upcoming features for the open-source spreadsheet engine."
+  />
+  <meta
+    name="keywords"
+    content="roadmap, IronCalc, spreadsheet engine, features, development"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fonts.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon/favicon-32x32.png" />
+
+  <!-- GitHub Star component -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Roadmap - IronCalc" />
+  <meta
+    property="og:description"
+    content="Explore IronCalc's development roadmap and upcoming features."
+  />
+  <meta
+    property="og:image"
+    content="https://www.ironcalc.com/images/ironcalc-og.png"
+  />
+  <meta property="og:url" content="https://ironcalc.com/roadmap" />
+  <meta property="og:type" content="website" />
+</head>
+
+<body id="roadmap-page">
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo w-200">
+        <a href="index.html#home">
+          <img src="images/ironcalc-logo.svg" alt="IronCalc Logo" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="roadmap.html" class="active">Roadmap</a></li>
+        <li><a href="https://docs.ironcalc.com/">Docs</a></li>
+        <li><a href="https://blog.ironcalc.com/">Blog</a></li>
+        <li><a href="mailto:hello@ironcalc.com">Contact</a></li>
+      </ul>
+      <div class="flex-h gap-md w-200 j-content-flex-end">
+        <div style="height: 28px">
+          <a
+            class="github-button"
+            href="https://github.com/ironcalc/ironcalc"
+            data-color-scheme="no-preference: light; light: light; dark: dark;"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star ironcalc/ironcalc on GitHub"
+          >
+            Star
+          </a>
+        </div>
+        <a
+          href="https://app.ironcalc.com"
+          target="_blank"
+          class="button"
+          id="join-waitlist-top"
+        >
+          Try now
+        </a>
+        <button id="menu-button" class="big-icon">
+          <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu flex-v" id="mobile-menu">
+    <a href="index.html#about">About</a>
+    <a href="roadmap.html" class="active">Roadmap</a>
+    <a class="flex-h gap-xs" href="https://docs.ironcalc.com/">Docs</a>
+    <a href="https://blog.ironcalc.com/">Blog</a>
+    <a href="mailto:hello@ironcalc.com">Contact</a>
+    <div class="spacer-24"></div>
+    <a href="https://app.ironcalc.com" target="_blank" class="button">
+      <p>Try now</p>
+    </a>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <a href="#roadmap-page" id="scroll-up" class="hidden">
+    <button class="back-to-top">
+      <i data-lucide="arrow-up"></i>
+    </button>
+  </a>
+
+  <!-- Header -->
+  <header class="no-bg">
+    <div class="hero">
+      <div class="hero-text">
+        <h1 class="medium">Roadmap</h1>
+        <h2 class="max-w-440 text-pretty small">
+          IronCalc is constantly evolving<br>as we work to make it better and more powerful
+        </h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <div class="section-content">
+        <p>We have work to do until the end of 2027! The two most important milestones are "version 1" and "version 2".</p>
+        <p>Version 1 focuses on the engine's core functionality and performance while version 2 aims to produce a fully-featured spreadsheet application that can substitute existing solutions.</p>
+        <p>Note that IronCalc is the work of a very small team and, for now, a side project. Deadlines and priorities are subject to change. If you have a specific need or request, we encourage you to reach out.</p>
+      </div>
+    </section>
+    <section id="roadmap-overview">
+      <div class="section-content">
+        <!-- Version 1 -->
+        <div class="roadmap-layout">
+          <div class="roadmap-left">
+            <h2 class="medium sticky flex-v gap-sm">
+              <div class="flex-h gap-sm">
+                <p class="font-w-600"><a href="https://github.com/ironcalc/IronCalc/milestone/2">v1</a></p>
+                <div class="badge-info">Q4 2025</div>
+              </div>
+              <p class="grey">The full engine</p>
+            </h2>
+          </div>
+          <div class="roadmap-right">
+            <div class="flex-v gap-xl text-pretty">
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Support for array formulas, dynamic arrays and LAMBDA</h3>
+                <p>
+                  Arrays and array formulas are vital components of any spreadsheet engine. Dynamic arrays—a recent innovation from Microsoft Excel—are implemented by very few engines, yet they offer tremendous utility.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Internationalization and Localization</h3>
+                <p>
+                  The engine and Web application will support three different languages (English, German and French) and a variety of locales. These settings affect how dates, times, currencies, numbers, and other region-specific formats are displayed. They also determine the default language used for functions and the user interface.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Implement 90% of Excel functions</h3>
+                <p>
+                  Although IronCalc already supports a good number of functions, we aim to support all of them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer-80 no-shrink"></div>
+        <div class="h-divider"></div>
+        <div class="spacer-80 no-shrink"></div>
+
+        <!-- Version 2 -->
+        <div class="roadmap-layout">
+          <div class="roadmap-left">
+            <h2 class="medium sticky flex-v gap-sm">
+              <div class="flex-h gap-sm">
+                <p class="font-w-600"><a href="https://github.com/ironcalc/IronCalc/milestone/3">v2</a></p>
+                <div class="badge-info">Q4 2026</div>
+              </div>
+              <p class="grey">The ready-to-use<br>product</p>
+            </h2>
+          </div>
+          <div class="roadmap-right">
+            <div class="flex-v gap-xl text-pretty">
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Conditional formatting</h3>
+                <p>
+                  Visual formatting to cells based on their values, making it easier to identify trends, outliers, and important data at a glance.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Tables, sorting and filtering</h3>
+                <p>
+                  Organize data into structured tables with built-in sorting and filtering capabilities for better data management and analysis.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Links, checkboxes and dropdowns</h3>
+                <p>
+                  Provide rich interaction with cells. Easy navigation to external resources, other spreadsheets, or web pages. Interactive forms and standardized data entry with checkboxes and dropdowns.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Comments and notes</h3>
+                <p>
+                  Adding contextual notes and explanations to cells will help provide additional information without cluttering the main data.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Merged cells</h3>
+                <p>
+                  To improve layout presentation and readability and compatibility.
+                </p>
+              </div>
+
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Charts</h3>
+                <p>
+                  Adding various chart types (e.g., bar, line, pie) to visualize and understand data. Charts make spreadsheets beautiful.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Collaborative editing</h3>
+                <p>
+                  Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution (CRDTs).
+                </p>
+              </div>
+
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">IronCalc, the product</h3>
+                <p>
+                  In <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">https://app.ironcalc.com</a> we intend to provide a user-friendly web application that allows users to create, edit, collaborate and share spreadsheets seamlessly. It will include a polished user interface, intuitive navigation, and a responsive design for various devices. For free, no ads, no intent to monetize it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer-80 no-shrink"></div>
+        <div class="h-divider"></div>
+        <div class="spacer-80 no-shrink"></div>
+
+        <!-- Beyond Version 2 -->
+        <div class="roadmap-layout">
+          <div class="roadmap-left">
+            <h2 class="medium sticky flex-v gap-sm">
+              <div class="flex-h gap-sm">
+                <p class="font-w-600">Beyond v2</p>
+                <div class="badge-info">2027 –</div>
+              </div>
+              <p class="grey">Long-term vision</p>
+            </h2>
+          </div>
+          <div class="roadmap-right">
+            <div class="flex-v gap-xl text-pretty">
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Desktop Application</h3>
+                <p>
+                  Native desktop applications for Windows, macOS, and Linux, providing offline access and system integration.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Pivot Tables</h3>
+                <p>
+                  Create dynamic pivot tables to summarize, analyze, and explore large datasets with interactive filtering and grouping capabilities.
+                </p>
+              </div>
+
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">AI-Powered Features</h3>
+                <p>
+                  AI could help automate data analysis, generate insights, and assist with complex calculations and decision-making processes.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Embedded programming language</h3>
+                <p>
+                  Allow users to write custom scripts and functions directly within the spreadsheet, enhancing flexibility and functionality.
+                </p>
+              </div>
+              
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">... and more</h3>
+                <p>
+                  We'll keep adding features and improvements as we go. IronCalc is open source, so if you have ideas you can contribute to it too!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer-48"></div>
+    </section>
+
+    <div class="spacer-24"></div>
+
+    <!-- Sponsors Section -->
+    <section class="grey p-12" id="sponsors">
+        <div class="flex-h gap-md max-w-920" id="funding">
+          <a
+            class="grey-container gap-lg"
+            href="https://nlnet.nl/project/IronCalc/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="w-140" src="images/nlnet-logo.svg" />
+          </a>
+          <p>
+            This project is funded through the
+            <a href="https://nlnet.nl/entrust" target="_blank" rel="noopener noreferrer">NGI0 Entrust Fund</a>, a fund established by
+            <a href="https://nlnet.nl/" target="_blank" rel="noopener noreferrer">NLnet</a> with financial
+            support from the European Commission's
+            <a href="https://ngi.eu/" target="_blank" rel="noopener noreferrer">Next Generation Internet</a>
+            program, under the aegis of DG Communications Networks, Content and
+            Technology under grant agreement No 101092990. Learn more on the
+            <a href="https://nlnet.nl/project/IronCalc/" target="_blank" rel="noopener noreferrer">project page</a>.
+          </p>
+        </div>
+      </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="section-content">
+      <div class="spacer-24"></div>
+
+      <div class="flex-h gap-xl a-items-flex-start" style="justify-content: space-between">
+        <div class="flex-v gap-md" id="footer-logo">
+          <div class="flex-v gap-xs">
+            <a href="index.html#scroll-up">
+              <img src="images/ironcalc-logo.svg" style="width: 140px" alt="IronCalc Logo" />
+            </a>
+            <p class="grey p-16 font-w-400" style="margin-left: 34px">
+              Open source<br />spreadsheet engine
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="flex-v gap-sm w-140">
+            <p>Product</p>
+            <a href="https://app.ironcalc.com/">App</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank">Source code</a>
+            <a href="roadmap.html">Roadmap</a>
+          </div>
+          <div class="flex-v gap-sm w-140">
+            <p>About</p>
+            <a href="index.html#about">About</a>
+            <a href="mailto:hello@ironcalc.com">Contact</a>
+          </div>
+          <div class="flex-v gap-sm w-140">
+            <p>Resources</p>
+            <a href="https://docs.ironcalc.com/">Docs</a>
+            <a href="https://blog.ironcalc.com/">Blog</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Community</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer-48"></div>
+      <div class="h-divider"></div>
+      <div class="spacer-24"></div>
+
+      <div class="flex-h j-content-space-between gap-sm">
+        <div class="flex-v gap-sm legal">
+          <p>
+            IronCalc is developed by <a href="https://www.nhatcher.com/" target="_blank">NH</a> and <a href="https://www.dg-ac.com/" target="_blank">DG-AC</a>.
+          </p>
+          <p>
+            Send us a note at
+            <a href="mailto:hello@ironcalc.com">hello@ironcalc.com</a>
+          </p>
+        </div>
+        <div class="flex-h gap-md" id="footer-socials">
+          <a href="https://github.com/ironcalc/ironcalc.github.io/edit/main/roadmap.html">Edit on GitHub</a>
+          <a
+            class="opacity-50"
+            href="https://github.com/ironcalc/ironcalc"
+            target="_blank"
+          >
+            <img src="images/github-logo.svg" style="width: 20px" alt="GitHub" />
+          </a>
+          <a
+            class="opacity-50"
+            href="https://discord.gg/zZYWfh3RHJ"
+            target="_blank"
+          >
+            <img src="images/discord-logo.svg" style="width: 20px" alt="Discord" />
+          </a>
+          <a
+            class="opacity-50"
+            href="https://bsky.app/profile/ironcalc.com"
+            target="_blank"
+          >
+            <img src="images/bluesky-logo.svg" style="width: 20px" alt="Bluesky" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html> 
