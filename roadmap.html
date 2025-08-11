@@ -116,6 +116,13 @@
 
   <!-- Main Content -->
   <main>
+    <section>
+      <div class="section-content">
+        <p>We have work to do until the end of 2027! The two most important milestones are "version 1" and "version 2".</p>
+        <p>Version 1 focuses on the engine's core functionality and performance while version 2 aims to produce a fully-featured spreadsheet application that can substitute existing solutions.</p>
+        <p>Note that IronCalc is the work of a very small team and, for now, a side project. Deadlines and priorities are subject to change. If a user has a specific need or request, we encourage you to reach out</p>
+      </div>
+    </section>
     <section id="roadmap-overview">
       <div class="section-content">
         <!-- Version 1 -->
@@ -123,7 +130,7 @@
           <div class="roadmap-left">
             <h2 class="medium sticky flex-v gap-sm">
               <div class="flex-h gap-sm">
-                <p class="font-w-600">v1</p>
+                <p class="font-w-600"><a href="https://github.com/ironcalc/IronCalc/milestone/2">v1</a></p>
                 <div class="badge-info">Q4 2025</div>
               </div>
               <p class="grey">The full engine</p>
@@ -134,14 +141,14 @@
               <div class="flex-v gap-sm">
                 <h3 class="font-w-600 medium">Support for array formulas, dynamic arrays and LAMBDA</h3>
                 <p>
-                  Arrays and array formulas are vital components of any spreadsheet engine. Dynamic arrays—a recent innovation from Microsoft Excel—are implemented by very few spreadsheet engines, yet they offer tremendous utility.
+                  Arrays and array formulas are vital components of any spreadsheet engine. Dynamic arrays—a recent innovation from Microsoft Excel—are implemented by very few engines, yet they offer tremendous utility.
                 </p>
               </div>
               
               <div class="flex-v gap-sm">
                 <h3 class="font-w-600 medium">Internationalization and Localization</h3>
                 <p>
-                  The engine and Web application should support three different languages and locales. These settings affect how dates, times, currencies, numbers, and other region-specific formats are displayed. They also determine the default language used for functions and the user interface.
+                  The engine and Web application will support three different languages (English, German and French) and a variety of locales. These settings affect how dates, times, currencies, numbers, and other region-specific formats are displayed. They also determine the default language used for functions and the user interface.
                 </p>
               </div>
               
@@ -164,20 +171,14 @@
           <div class="roadmap-left">
             <h2 class="medium sticky flex-v gap-sm">
               <div class="flex-h gap-sm">
-                <p class="font-w-600">v2</p>
-                <div class="badge-info">2026</div>
+                <p class="font-w-600"><a href="https://github.com/ironcalc/IronCalc/milestone/3">v2</a></p>
+                <div class="badge-info">Q4 2026</div>
               </div>
               <p class="grey">The ready-to-use<br> product</p>
             </h2>
           </div>
           <div class="roadmap-right">
             <div class="flex-v gap-xl text-pretty">
-              <div class="flex-v gap-sm">
-                <h3 class="font-w-600 medium">AI-Powered Features</h3>
-                <p>
-                  AI could help automate data analysis, generate insights, and assist with complex calculations and decision-making processes.
-                </p>
-              </div>
               
               <div class="flex-v gap-sm">
                 <h3 class="font-w-600 medium">Conditional formatting</h3>
@@ -194,30 +195,37 @@
               </div>
               
               <div class="flex-v gap-sm">
-                <h3 class="font-w-600 medium">Links</h3>
+                <h3 class="font-w-600 medium">Links, checkboxes and dropdowns</h3>
                 <p>
-                  For easy navigation to external resources, other spreadsheets, or web pages.
+                  Provide rich interaction with cells. Easy navigation to external resources, other spreadsheets, or web pages. Interactive forms and standardized data entry with checkboxes and dropdowns.
                 </p>
               </div>
               
               <div class="flex-v gap-sm">
-                <h3 class="font-w-600 medium">Comments</h3>
+                <h3 class="font-w-600 medium">Comments and notes</h3>
                 <p>
                   Adding contextual notes and explanations to cells will help provide additional information without cluttering the main data.
                 </p>
               </div>
               
               <div class="flex-v gap-sm">
-                <h3 class="font-w-600 medium">Dropdowns, Checkboxes, Merged cells</h3>
+                <h3 class="font-w-600 medium">Merged cells</h3>
                 <p>
-                  To create interactive forms, standardized data entry, and improve layout presentation.
+                  To improve layout presentation and readability and compatibility.
+                </p>
+              </div>
+
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">Charts</h3>
+                <p>
+                  Adding various chart types (e.g., bar, line, pie) to visualize and understand data. Charts make spreadsheets beautiful.
                 </p>
               </div>
               
               <div class="flex-v gap-sm">
                 <h3 class="font-w-600 medium">Collaborative editing</h3>
                 <p>
-                  Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution.
+                  Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution (CRDTs).
                 </p>
               </div>
             </div>
@@ -254,11 +262,18 @@
                   Create dynamic pivot tables to summarize, analyze, and explore large datasets with interactive filtering and grouping capabilities.
                 </p>
               </div>
+
+              <div class="flex-v gap-sm">
+                <h3 class="font-w-600 medium">AI-Powered Features</h3>
+                <p>
+                  AI could help automate data analysis, generate insights, and assist with complex calculations and decision-making processes.
+                </p>
+              </div>
               
               <div class="flex-v gap-sm">
-                <h3 class="font-w-600 medium">Password-protected spreadsheets</h3>
+                <h3 class="font-w-600 medium">Embedded programming language</h3>
                 <p>
-                  Protect sensitive data with password-based security, ensuring only authorized users can access and modify spreadsheets.
+                  Allow users to write custom scripts and functions directly within the spreadsheet, enhancing flexibility and functionality.
                 </p>
               </div>
               
