@@ -479,8 +479,15 @@ button.back-to-top .lucide {
   margin: 0px;
 }
 
+.badge-info img {
+  width: 14px;
+  height: 14px;
+  margin-left: -2px;
+}
+
 .badge-info:hover {
   border: 1px var(--grey-400) solid;
+  text-decoration: none;
 }
 
 .badge-md {
