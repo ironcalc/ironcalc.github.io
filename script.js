@@ -135,11 +135,11 @@ function initLogoContextMenu() {
     e.preventDefault();
     contextMenu.style.left = e.clientX + "px";
     contextMenu.style.top = e.clientY + "px";
-    contextMenu.setAttribute("aria-hidden", "false");
+    contextMenu.hidden = false;
   });
 
   function closeContextMenu() {
-    contextMenu.setAttribute("aria-hidden", "true");
+    contextMenu.hidden = true;
   }
 
   downloadBtn.addEventListener("click", function () {
@@ -161,7 +161,7 @@ function initLogoContextMenu() {
     }
   });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && contextMenu.getAttribute("aria-hidden") === "false") {
+    if (e.key === "Escape" && !contextMenu.hidden) {
       closeContextMenu();
     }
   });
@@ -190,16 +190,49 @@ function initFaqAccordion() {
 function initTerminalCopy() {
   const btn = document.querySelector(".terminal-window__copy");
   if (!btn) return;
+
+  const text = "docker compose up --build";
+
+  function showCopied() {
+    btn.classList.add("copied");
+    setTimeout(function () {
+      btn.classList.remove("copied");
+    }, 2000);
+  }
+
+  function showFailed() {
+    btn.classList.add("copy-failed");
+    setTimeout(function () {
+      btn.classList.remove("copy-failed");
+    }, 2000);
+  }
+
+  function fallbackCopy() {
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      var ok = document.execCommand("copy");
+      if (ok) showCopied();
+      else showFailed();
+    } catch (e) {
+      showFailed();
+    }
+    document.body.removeChild(textarea);
+  }
+
   btn.addEventListener("click", function () {
-    navigator.clipboard.writeText("docker compose up --build").then(
-      function () {
-        btn.classList.add("copied");
-        setTimeout(function () {
-          btn.classList.remove("copied");
-        }, 2000);
-      },
-      function () {}
-    );
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+      navigator.clipboard.writeText(text).then(showCopied, function () {
+        fallbackCopy();
+      });
+    } else {
+      fallbackCopy();
+    }
   });
 }
 
@@ -338,18 +371,31 @@ function initContributorsAvatars() {
 function initRoadmapExpandableCards() {
   const cards = document.querySelectorAll(".roadmap-card--expandable");
   cards.forEach(function (card) {
+    const header = card.querySelector(".roadmap-card__header");
     const details = card.querySelector(".roadmap-card-details");
-    if (!details) return;
-    card.addEventListener("click", function (e) {
-      if (e.target.closest("a[href]")) return;
-      const expanded = card.classList.toggle("is-expanded");
-      card.setAttribute("aria-expanded", expanded);
+    if (!header || !details) return;
+    function setDetailsExpanded(expanded) {
+      header.setAttribute("aria-expanded", expanded);
       details.setAttribute("aria-hidden", !expanded);
+      details.querySelectorAll("a").forEach(function (link) {
+        if (expanded) link.removeAttribute("tabindex");
+        else link.setAttribute("tabindex", "-1");
+      });
+    }
+    setDetailsExpanded(card.classList.contains("is-expanded"));
+    header.setAttribute("role", "button");
+    header.setAttribute("tabindex", "0");
+    if (details.id) header.setAttribute("aria-controls", details.id);
+    card.addEventListener("click", function (e) {
+      if (e.target.closest("a")) return;
+      const expanded = card.classList.toggle("is-expanded");
+      setDetailsExpanded(expanded);
     });
-    card.addEventListener("keydown", function (e) {
+    header.addEventListener("keydown", function (e) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
-        card.click();
+        const expanded = card.classList.toggle("is-expanded");
+        setDetailsExpanded(expanded);
       }
     });
   });

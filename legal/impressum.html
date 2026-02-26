@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - IronCalc</title>
     <meta
     name="description"
     content="Legal information and imprint for IronCalc GmbH."
-  />
+  >
     <meta
     name="keywords"
     content="IronCalc, legal, imprint, contact"
-  />
+  >
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css?v=1" />
-    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="../styles.css?v=1">
+    <link rel="stylesheet" href="../fonts.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="../favicon/favicon-32x32.png"   />
+    <link rel="icon" href="../favicon/favicon-32x32.png">
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Impressum - IronCalc" />
+    <meta property="og:title" content="Impressum - IronCalc">
     <meta
     property="og:description"
     content="Legal information and imprint for IronCalc GmbH."
-  />
+  >
     <meta
     property="og:image"
     content="https://www.ironcalc.com/images/ironcalc-og.png"
-  />
-    <meta property="og:url" content="https://ironcalc.com/legal/impressum.html" />
-    <meta property="og:type" content="website" />
+  >
+    <meta property="og:url" content="https://ironcalc.com/legal/impressum.html">
+    <meta property="og:type" content="website">
   </head>
   <body id="impressum-page">
   <!-- Navigation -->
@@ -39,9 +39,9 @@
     <div class="nav-container b-both">
       <div class="logo w-200">
         <a href="../index.html#home" id="logo-link">
-          <img src="../images/ironcalc-logo.svg" alt="IronCalc Logo" />
+          <img src="../images/ironcalc-logo.svg" alt="IronCalc Logo">
         </a>
-        <div id="logo-context-menu" class="context-menu" role="menu" aria-hidden="true">
+        <div id="logo-context-menu" class="context-menu" role="menu" hidden>
           <button type="button" role="menuitem" id="logo-download-svg"><i data-lucide="download" class="lucide" aria-hidden="true"></i>Download logo as .svg</button>
         </div>
       </div>
@@ -53,22 +53,22 @@
         <a
           href="https://github.com/ironcalc/ironcalc"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           class="button secondary github-star-btn"
           aria-label="Star ironcalc/ironcalc on GitHub"
         >
-          <img src="../images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true" />
+          <img src="../images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true">
           <span class="github-star-count" aria-hidden="true">—</span>
         </a>
         <a
           href="https://app.ironcalc.com"
           target="_blank"
+          rel="noopener noreferrer"
           class="button"
           id="join-waitlist-top"
-          >Try now</a
-        >
+          >Try now</a>
 
-        <button id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <button type="button" id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <i data-lucide="menu" class="menu-icon" aria-hidden="true"></i>
           <i data-lucide="x" class="close-icon" aria-hidden="true"></i>
         </button>
@@ -79,14 +79,14 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu flex-v" id="mobile-menu">
     <div class="flex-v b-both px-lg h-full">
-      <a href="https://app.ironcalc.com" target="_blank">App</a>
-      <a href="https://github.com/ironcalc/ironcalc" target="_blank">Source code</a>
+      <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">App</a>
+      <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Source code <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
       <a href="../roadmap.html">Roadmap</a>
       <a href="../about.html">Who we are</a>
       <a href="mailto:hello@ironcalc.com">Contact</a>
       <a href="https://docs.ironcalc.com/">Docs</a>
       <a href="https://blog.ironcalc.com/">Blog</a>
-      <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Community</a>
+      <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Community <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
 
       <div class="mobile-menu-footer flex-v gap-md">
         <div class="flex-h gap-md flex-wrap">
@@ -94,9 +94,9 @@
           <div class="flex-h gap-md">
             <a href="privacy.html">Privacy</a>
             <a href="impressum.html">Impressum</a>
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">GitHub</a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Discord</a>
-            <a href="https://bsky.app/profile/ironcalc.com" target="_blank">Bluesky</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">Bluesky</a>
           </div>
         </div>
       </div>
@@ -104,11 +104,7 @@
   </div>
 
   <!-- Scroll to Top Button -->
-  <a href="#impressum-page" id="scroll-up" class="hidden" aria-label="Back to top">
-    <button class="back-to-top" aria-label="Back to top">
-      <i data-lucide="arrow-up" aria-hidden="true"></i>
-    </button>
-  </a>
+  <a href="#impressum-page" id="scroll-up" class="hidden back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
 
   <!-- Main Content -->
   <main>
@@ -153,6 +149,7 @@
 
         </div>
 
+      </div>
     </section>
 
     <div class="h-divider"></div>
@@ -167,24 +164,24 @@
 
           <div class="flex-v gap-xs">
             <a href="../index.html#scroll-up" aria-label="IronCalc home"
-              ><img src="../images/ironcalc-logo.svg" style="width: 140px" alt="IronCalc logo"
-            /></a>
-            <p class="grey-500 p-16 font-w-400" style="margin-left: 34px">
-              Open source<br />spreadsheet engine
+              ><img src="../images/ironcalc-logo.svg" class="w-140px" alt="IronCalc logo"
+            ></a>
+            <p class="grey-500 p-16 font-w-400 ml-34">
+              Open source<br>spreadsheet engine
             </p>
           </div>
 
 
-          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start" style="margin-left: 34px;">
+          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start ml-34">
             <div class="flex-h j-content-center a-items-center gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: #003399; min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="../images/eu-stars.svg" width="60%" alt="EU flag" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box">
+                <img src="../images/eu-stars.svg" class="img-60pc" alt="EU flag">
               </div>
               <p>Horizon Europe programme</p>
             </div>
             <div class="flex-h gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: var(--grey-200); min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="../images/nlnet-icon.svg" width="60%" alt="NLnet Foundation icon" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box-grey">
+                <img src="../images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon">
               </div>
               <p>the NLnet foundation</p>
             </div>
@@ -196,9 +193,7 @@
           <div class="flex-v gap-sm w-140">
             <p class="font-w-600">Product</p>
             <a href="https://app.ironcalc.com/">App</a>
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank"
-              >Source code</a
-            >
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">Source code</a>
             <a href="../roadmap.html">Roadmap</a>
           </div>
           <div class="flex-v gap-sm w-140">
@@ -210,29 +205,25 @@
             <p class="font-w-600">Resources</p>
             <a href="https://docs.ironcalc.com/">Docs</a>
             <a href="https://blog.ironcalc.com/">Blog</a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank"
-              >Community</a
-            >
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Community</a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
             <p>© 2026 IronCalc GmbH</p>
             <a href="privacy.html">Privacy</a>
-            <a href="impressum.html"
-            >Impressum</a
-            >
+            <a href="impressum.html">Impressum</a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">
-              <img src="../images/github-logo.svg" style="width: 16px" alt="GitHub icon" />
-              <p>GitHub</p>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">
+              <img src="../images/github-logo.svg" class="w-20px" alt="GitHub icon">
+              <span>GitHub</span>
             </a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">
-              <img src="../images/discord-logo.svg" style="width: 16px" alt="Discord icon" />
-              <p>Discord</p>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">
+              <img src="../images/discord-logo.svg" class="w-20px" alt="Discord icon">
+              <span>Discord</span>
             </a>
-            <a href="https://bsky.app/profile/ironcalc.com" target="_blank">
-              <img src="../images/bluesky-logo.svg" style="width: 16px" alt="Bluesky icon" />
-              <p>Bluesky</p>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">
+              <img src="../images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon">
+              <span>Bluesky</span>
             </a>
           </div>
         </div>
@@ -241,7 +232,7 @@
     </div>
 
     <div class="w-1020 b-both footer-logo-xl-wrap">
-      <img class="footer-logo-xl" src="../images/ironcalc-logo-xl.svg" style="width: 100%; display: block;" alt="IronCalc logo" />
+      <img class="footer-logo-xl block-w-full" src="../images/ironcalc-logo-xl.svg" alt="IronCalc logo">
     </div>
 
     <div class="h-divider"></div>
@@ -260,24 +251,24 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on GitHub"
-              ><img src="../images/github-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="../images/github-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://discord.gg/zZYWfh3RHJ"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Discord"
-              ><img src="../images/discord-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="../images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://bsky.app/profile/ironcalc.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Bluesky"
-              ><img src="../images/bluesky-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="../images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
         </div>
       </div>
     </div>

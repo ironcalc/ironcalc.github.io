@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadmap - IronCalc</title>
     <meta
     name="description"
     content="Explore IronCalc's development roadmap and upcoming features for the open-source spreadsheet engine."
-  />
+  >
     <meta
     name="keywords"
     content="roadmap, IronCalc, spreadsheet engine, features, development"
-  />
+  >
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=1" />
-    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="fonts.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon/favicon-32x32.png" />
+    <link rel="icon" href="favicon/favicon-32x32.png">
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Roadmap - IronCalc" />
+    <meta property="og:title" content="Roadmap - IronCalc">
     <meta
     property="og:description"
     content="Explore IronCalc's development roadmap and upcoming features."
-  />
+  >
     <meta
     property="og:image"
     content="https://www.ironcalc.com/images/ironcalc-og.png"
-  />
-    <meta property="og:url" content="https://ironcalc.com/roadmap" />
-    <meta property="og:type" content="website" />
+    >
+    <meta property="og:url" content="https://ironcalc.com/roadmap">
+    <meta property="og:type" content="website">
   </head>
   <body id="roadmap-page">
   <!-- Navigation -->
@@ -39,9 +39,9 @@
     <div class="nav-container b-both">
       <div class="logo w-200">
         <a href="index.html#home" id="logo-link">
-          <img src="images/ironcalc-logo.svg" alt="IronCalc Logo" />
+          <img src="images/ironcalc-logo.svg" alt="IronCalc Logo">
         </a>
-        <div id="logo-context-menu" class="context-menu" role="menu" aria-hidden="true">
+        <div id="logo-context-menu" class="context-menu" role="menu" hidden>
           <button type="button" role="menuitem" id="logo-download-svg"><i data-lucide="download" class="lucide" aria-hidden="true"></i>Download logo as .svg</button>
         </div>
       </div>
@@ -53,22 +53,22 @@
         <a
           href="https://github.com/ironcalc/ironcalc"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
           class="button secondary github-star-btn"
           aria-label="Star ironcalc/ironcalc on GitHub"
         >
-          <img src="images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true" />
+          <img src="images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true">
           <span class="github-star-count" aria-hidden="true">—</span>
         </a>
         <a
           href="https://app.ironcalc.com"
           target="_blank"
+          rel="noopener noreferrer"
           class="button"
           id="join-waitlist-top"
-        >Try now</a
-        >
+        >Try now</a>
 
-        <button id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <button type="button" id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
           <i data-lucide="menu" class="menu-icon" aria-hidden="true"></i>
           <i data-lucide="x" class="close-icon" aria-hidden="true"></i>
         </button>
@@ -79,14 +79,14 @@
   <!-- Mobile Menu -->
   <div class="mobile-menu flex-v" id="mobile-menu">
     <div class="flex-v b-both px-lg h-full">
-      <a href="https://app.ironcalc.com" target="_blank">App</a>
-      <a href="https://github.com/ironcalc/ironcalc" target="_blank">Source code</a>
+      <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">App</a>
+      <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Source code <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
       <a href="roadmap.html">Roadmap</a>
       <a href="about.html">Who we are</a>
       <a href="mailto:hello@ironcalc.com">Contact</a>
       <a href="https://docs.ironcalc.com/">Docs</a>
       <a href="https://blog.ironcalc.com/">Blog</a>
-      <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Community</a>
+      <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Community <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
 
       <div class="mobile-menu-footer flex-v gap-md">
         <div class="flex-h gap-md flex-wrap">
@@ -94,9 +94,9 @@
           <div class="flex-h gap-md">
             <a href="legal/privacy.html">Privacy</a>
             <a href="legal/impressum.html">Impressum</a>
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">GitHub</a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Discord</a>
-            <a href="https://bsky.app/profile/ironcalc.com" target="_blank">Bluesky</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">Bluesky</a>
           </div>
         </div>
       </div>
@@ -104,11 +104,7 @@
   </div>
 
   <!-- Scroll to Top Button -->
-  <a href="#roadmap-page" id="scroll-up" class="hidden" aria-label="Back to top">
-    <button class="back-to-top" aria-label="Back to top">
-      <i data-lucide="arrow-up" aria-hidden="true"></i>
-    </button>
-  </a>
+  <a href="#roadmap-page" id="scroll-up" class="hidden back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
 
   <!-- Header -->
   <header class="no-bg">
@@ -138,56 +134,55 @@
           <div class="h-divider h-divider--mobile-only" aria-hidden="true"></div>
 
           <div class="flex-v gap-md w-70pc px-2xl py-3xl">
-            
-                <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-1" id="roadmap-card-1">
+                <div class="roadmap-card roadmap-card--expandable flex-v">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="braces" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <h3 class="font-w-500">Support for array formulas, dynamic arrays and LAMBDA</h3>
+                    <span class="roadmap-card__title font-w-500">Support for array formulas, dynamic arrays and LAMBDA</span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-1" aria-hidden="true">
                     <p class="grey-700">Arrays and array formulas are vital components of any spreadsheet engine. Dynamic arrays—a recent innovation from Microsoft Excel—are implemented by very few engines, yet they offer tremendous utility.</p>
-                    <a href="https://github.com/ironcalc/IronCalc/issues/15" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/15" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                   </div>
                 </div>
 
-                <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+                <div class="roadmap-card roadmap-card--expandable flex-v">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="sigma" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <h3 class="font-w-500">Implement 90% of Excel functions</h3>
+                    <span class="roadmap-card__title font-w-500">Implement 90% of Excel functions</span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
                     <p>Although IronCalc already supports a good number of functions, we aim to support all of them.</p>
-                    <a href="https://github.com/ironcalc/IronCalc/issues?q=is%3Aissue%20state%3Aopen%20label%3AFunctions" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues?q=is%3Aissue%20state%3Aopen%20label%3AFunctions" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                   </div>
                 </div>
 
-                <div class="roadmap-card roadmap-card--expandable flex-v completed" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-2" id="roadmap-card-2">
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="globe" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <h3 class="font-w-500">Internationalization and Localization <span>done</span></h3>
+                    <span class="roadmap-card__title font-w-500">Internationalization and Localization <span>done</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-2" aria-hidden="true">
                     <p>The engine and Web application will support three different languages (English, German and French) and a variety of locales. These settings affect how dates, times, currencies, numbers, and other region-specific formats are displayed. They also determine the default language used for functions and the user interface.</p>
-                    <a href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
                   </div>
                 </div>
 
-                <div class="roadmap-card roadmap-card--expandable flex-v completed" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-2" id="roadmap-card-2">
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="tags" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <h3 class="font-w-500">Named Ranges<span>done</span></h3>
+                    <span class="roadmap-card__title font-w-500">Named Ranges<span>done</span></span>
                   </div>
-                  <div class="roadmap-card-details" id="roadmap-card-details-2" aria-hidden="true">
+                  <div class="roadmap-card-details" id="roadmap-card-details-4" aria-hidden="true">
                     <p>Named ranges allow you to create custom names for cell ranges, making it easier to reference and manipulate specific data sets within a spreadsheet.</p>
-                    <a href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
                   </div>
                 </div>
-            
+
           </div>
         </div>
       </div>
       <div class="h-divider"></div>
-      <div class="w-1020 b-both"> 
+      <div class="w-1020 b-both">
         <div class="flex-h a-items-flex-start">
 
           <div class="flex-v gap-sm w-30pc px-3xl py-3xl roadmap-left">
@@ -199,90 +194,90 @@
 
           <div class="flex-v gap-sm w-70pc px-2xl py-3xl">
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="palette" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Conditional formatting</h3>
+                <span class="roadmap-card__title font-w-500">Conditional formatting</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-5" aria-hidden="true">
                 <p>Visual formatting to cells based on their values, making it easier to identify trends, outliers, and important data at a glance.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/63" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/63" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="table-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Tables, sorting and filtering</h3>
+                <span class="roadmap-card__title font-w-500">Tables, sorting and filtering</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-6" aria-hidden="true">
                 <p>Organize data into structured tables with built-in sorting and filtering capabilities for better data management and analysis.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/300" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/300" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="link-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Links, checkboxes and dropdowns</h3>
+                <span class="roadmap-card__title font-w-500">Links, checkboxes and dropdowns</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-7" aria-hidden="true">
                 <p>Provide rich interaction with cells. Easy navigation to external resources, other spreadsheets, or web pages. Interactive forms and standardized data entry with checkboxes and dropdowns.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/294" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/294" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="message-square-heart" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Comments and notes</h3>
+                <span class="roadmap-card__title font-w-500">Comments and notes</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-8" aria-hidden="true">
                 <p>Adding contextual notes and explanations to cells will help provide additional information without cluttering the main data.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/295" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/295" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="table-cells-merge" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Merged cells</h3>
+                <span class="roadmap-card__title font-w-500">Merged cells</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-9" aria-hidden="true">
                 <p>To improve layout presentation and readability and compatibility.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/61" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/61" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="bar-chart-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Charts</h3>
+                <span class="roadmap-card__title font-w-500">Charts</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-10" aria-hidden="true">
                 <p>Adding various chart types (e.g., bar, line, pie) to visualize and understand data. Charts make spreadsheets beautiful.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/348" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/348" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="users" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Collaborative editing</h3>
+                <span class="roadmap-card__title font-w-500">Collaborative editing</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-11" aria-hidden="true">
                 <p>Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution (CRDTs).</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/349" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/349" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="rocket" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">IronCalc, the product</h3>
+                <span class="roadmap-card__title font-w-500">IronCalc, the product</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
-                <p>In <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">https://app.ironcalc.com</a> we intend to provide a user-friendly web application that allows users to create, edit, collaborate and share spreadsheets seamlessly. It will include a polished user interface, intuitive navigation, and a responsive design for various devices. For free, no ads, no intent to monetize it.</p>
+              <div class="roadmap-card-details" id="roadmap-card-details-12" aria-hidden="true">
+                <p>In <a tabindex="-1" href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">https://app.ironcalc.com</a> we intend to provide a user-friendly web application that allows users to create, edit, collaborate and share spreadsheets seamlessly. It will include a polished user interface, intuitive navigation, and a responsive design for various devices. For free, no ads, no intent to monetize it.</p>
               </div>
             </div>
 
@@ -301,55 +296,55 @@
 
           <div class="flex-v gap-sm w-70pc px-2xl py-3xl">
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="monitor" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Desktop Application</h3>
+                <span class="roadmap-card__title font-w-500">Desktop Application</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-13" aria-hidden="true">
                 <p>Native desktop applications for Windows, macOS, and Linux, providing offline access and system integration.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/57" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/57" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="columns-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Pivot Tables</h3>
+                <span class="roadmap-card__title font-w-500">Pivot Tables</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-14" aria-hidden="true">
                 <p>Create dynamic pivot tables to summarize, analyze, and explore large datasets with interactive filtering and grouping capabilities.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/44" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/44" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="sparkles" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">AI-Powered Features</h3>
+                <span class="roadmap-card__title font-w-500">AI-Powered Features</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-15" aria-hidden="true">
                 <p>AI could help automate data analysis, generate insights, and assist with complex calculations and decision-making processes.</p>
-                <a href="https://github.com/ironcalc/IronCalc/issues/29" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/29" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="code" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">Embedded programming language</h3>
+                <span class="roadmap-card__title font-w-500">Embedded programming language</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-16" aria-hidden="true">
                 <p>Allow users to write custom scripts and functions directly within the spreadsheet, enhancing flexibility and functionality.</p>
               </div>
             </div>
 
-            <div class="roadmap-card roadmap-card--expandable flex-v" tabindex="0" role="button" aria-expanded="false" aria-controls="roadmap-card-details-3" id="roadmap-card-3">
+            <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
                 <i data-lucide="plus-circle" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <h3 class="font-w-500">... and more</h3>
+                <span class="roadmap-card__title font-w-500">... and more</span>
               </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
+              <div class="roadmap-card-details" id="roadmap-card-details-17" aria-hidden="true">
                 <p>We'll keep adding features and improvements as we go. IronCalc is open source, so if you have ideas you can contribute to it too!</p>
               </div>
             </div>
@@ -357,7 +352,7 @@
           </div>
         </div>
       </div>
-      
+
     </section>
 
     <div class="h-divider"></div>
@@ -372,24 +367,24 @@
 
           <div class="flex-v gap-xs">
             <a href="index.html#scroll-up" aria-label="IronCalc home">
-              <img src="images/ironcalc-logo.svg" style="width: 140px" alt="IronCalc Logo" />
+              <img src="images/ironcalc-logo.svg" class="w-140px" alt="IronCalc Logo">
             </a>
-            <p class="grey-500 p-16 font-w-400" style="margin-left: 34px">
-              Open source<br />spreadsheet engine
+            <p class="grey-500 p-16 font-w-400 ml-34">
+              Open source<br>spreadsheet engine
             </p>
           </div>
 
 
-          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start" style="margin-left: 34px;">
+          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start ml-34">
             <div class="flex-h j-content-center a-items-center gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: #003399; min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="images/eu-stars.svg" width="60%" alt="EU flag" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box">
+                <img src="images/eu-stars.svg" class="img-60pc" alt="EU flag">
               </div>
               <p>Horizon Europe programme</p>
             </div>
             <div class="flex-h gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: var(--grey-200); min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="images/nlnet-icon.svg" width="60%" alt="NLnet Foundation icon" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box-grey">
+                <img src="images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon">
               </div>
               <p>the NLnet foundation</p>
             </div>
@@ -400,7 +395,7 @@
           <div class="flex-v gap-sm w-140">
             <p class="font-w-600">Product</p>
             <a href="https://app.ironcalc.com/">App</a>
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">Source code</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">Source code</a>
             <a href="roadmap.html">Roadmap</a>
           </div>
           <div class="flex-v gap-sm w-140">
@@ -412,7 +407,7 @@
             <p class="font-w-600">Resources</p>
             <a href="https://docs.ironcalc.com/">Docs</a>
             <a href="https://blog.ironcalc.com/">Blog</a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">Community</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Community</a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
             <p>© 2026 IronCalc GmbH</p>
@@ -420,17 +415,17 @@
             <a href="legal/impressum.html">Impressum</a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">
-              <img src="images/github-logo.svg" style="width: 16px" alt="GitHub icon" />
-              <p>GitHub</p>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">
+              <img src="images/github-logo.svg" class="w-20px" alt="GitHub icon">
+              <span>GitHub</span>
             </a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank">
-              <img src="images/discord-logo.svg" style="width: 16px" alt="Discord icon" />
-              <p>Discord</p>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">
+              <img src="images/discord-logo.svg" class="w-20px" alt="Discord icon">
+              <span>Discord</span>
             </a>
-            <a href="https://bsky.app/profile/ironcalc.com" target="_blank">
-              <img src="images/bluesky-logo.svg" style="width: 16px" alt="Bluesky icon" />
-              <p>Bluesky</p>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon">
+              <span>Bluesky</span>
             </a>
           </div>
         </div>
@@ -439,7 +434,7 @@
     </div>
 
     <div class="w-1020 b-both footer-logo-xl-wrap">
-      <img class="footer-logo-xl" src="images/ironcalc-logo-xl.svg" style="width: 100%; display: block;" alt="IronCalc logo" />
+      <img class="footer-logo-xl block-w-full" src="images/ironcalc-logo-xl.svg" alt="IronCalc logo">
     </div>
 
     <div class="h-divider"></div>
@@ -458,24 +453,24 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on GitHub"
-              ><img src="images/github-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/github-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://discord.gg/zZYWfh3RHJ"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Discord"
-              ><img src="images/discord-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://bsky.app/profile/ironcalc.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Bluesky"
-              ><img src="images/bluesky-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
         </div>
       </div>
     </div>

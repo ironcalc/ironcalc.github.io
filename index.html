@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IronCalc - Open-Source Spreadsheet Engine</title>
     <meta
       name="description"
       content="IronCalc is an open-source spreadsheet engine and ecosystem. Try it now and help us build the future of spreadsheets!"
-    />
+    >
     <meta
       name="keywords"
       content="spreadsheets, open-source, IronCalc, spreadsheet engine"
-    />
+    >
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=1" />
-    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="fonts.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon/favicon-32x32.png" />
+    <link rel="icon" href="favicon/favicon-32x32.png">
 
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="IronCalc" />
+    <meta property="og:title" content="IronCalc">
     <meta
       property="og:description"
       content="IronCalc is a spreadsheet engine and ecosystem."
-    />
+    >
     <meta
       property="og:image"
       content="https://www.ironcalc.com/images/ironcalc-og.png"
-    />
-    <meta property="og:url" content="https://ironcalc.com" />
-    <meta property="og:type" content="website" />
+    >
+    <meta property="og:url" content="https://ironcalc.com">
+    <meta property="og:type" content="website">
   </head>
   <body id="body">
     <nav id="navbar">
       <div class="nav-container b-both">
         <div class="logo w-200">
           <a href="index.html#home" id="logo-link">
-            <img src="images/ironcalc-logo.svg" alt="IronCalc Logo" />
+            <img src="images/ironcalc-logo.svg" alt="IronCalc Logo">
           </a>
-          <div id="logo-context-menu" class="context-menu" role="menu" aria-hidden="true">
+          <div id="logo-context-menu" class="context-menu" role="menu" hidden>
             <button type="button" role="menuitem" id="logo-download-svg"><i data-lucide="download" class="lucide" aria-hidden="true"></i>Download logo as .svg</button>
           </div>
         </div>
@@ -52,22 +52,22 @@
           <a
             href="https://github.com/ironcalc/ironcalc"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             class="button secondary github-star-btn"
             aria-label="Star ironcalc/ironcalc on GitHub"
           >
-            <img src="images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true" />
+            <img src="images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true">
             <span class="github-star-count" aria-hidden="true">—</span>
           </a>
           <a
             href="https://app.ironcalc.com"
             target="_blank"
+            rel="noopener noreferrer"
             class="button"
             id="join-waitlist-top"
-            >Try now</a
-          >
+            >Try now</a>
 
-          <button id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <button type="button" id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
             <i data-lucide="menu" class="menu-icon" aria-hidden="true"></i>
             <i data-lucide="x" class="close-icon" aria-hidden="true"></i>
           </button>
@@ -77,14 +77,14 @@
 
     <div class="mobile-menu flex-v" id="mobile-menu">
       <div class="flex-v b-both px-lg h-full">
-        <a href="https://app.ironcalc.com" target="_blank">App</a>
-        <a href="https://github.com/ironcalc/ironcalc" target="_blank" class="flex-h gap-xs a-items-center">Source code <i data-lucide="arrow-up-right" class="lucide" style="width: 20px; height: 20px" aria-hidden="true"></i></a>
+        <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">App</a>
+        <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Source code <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
         <a href="roadmap.html">Roadmap</a>
         <a href="about.html">Who we are</a>
         <a href="mailto:hello@ironcalc.com">Contact</a>
         <a href="https://docs.ironcalc.com/">Docs</a>
         <a href="https://blog.ironcalc.com/">Blog</a>
-        <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" class="flex-h gap-xs a-items-center">Discord <i data-lucide="arrow-up-right" class="lucide" style="width: 20px; height: 20px" aria-hidden="true"></i></a>
+        <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Discord <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
 
         <div class="mobile-menu-footer flex-v gap-md">
           <div class="flex-h gap-md flex-wrap">
@@ -92,30 +92,25 @@
             <div class="flex-h gap-md">
               <a href="legal/privacy.html">Privacy</a>
               <a href="legal/impressum.html">Impressum</a>
-            </div>   
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <a href="#body" id="scroll-up" class="hidden" aria-label="Back to top">
-      <button class="back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
-    </a>
+    <a href="#body" id="scroll-up" class="hidden back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
 
     <header>
       <div class="hero">
         <div class="hero-text b-both">
-          <h1 class="ff-mozilla font-w-500">Open source <br />spreadsheet engine</h1>
+          <h1 class="ff-mozilla font-w-500">Open source <br>spreadsheet engine</h1>
           <h2 class="text-pretty">
             Advanced spreadsheet solutions for everyone
           </h2>
           <div class="hero-ctas">
-            <a href="https://app.ironcalc.com" target="_blank" class="button"
-              >Try now</a
-            >
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank" class="button secondary"
-              >Source code</a
-            >
+            <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer" class="button"
+              >Try now</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer" class="button secondary">Source code</a>
           </div>
         </div>
         <div class="h-divider"></div>
@@ -125,7 +120,7 @@
               <img
                 src="images/spreadsheet.png"
                 alt="Screenshot of IronCalc Spreadsheet"
-              />
+              >
               <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer" class="playground-try-button dark">Open app</a>
             </div>
           </div>
@@ -149,21 +144,19 @@
           <div class="flex-h gap-lg w-full py-3xl j-content-center">
 
             <div class="w-auto">
-              <img width="100px" src="images/eu-logo.svg" alt="European Commission logo" />
+              <img class="w-100px" src="images/eu-logo.svg" alt="European Commission logo">
             </div>
             <div class="flex-v gap-xs p-14">
               <p>Horizon Europe programme</p>
               <p class="grey-600">via ELFA Consortium</p>
             </div>
-          
           </div>
-          
           <div class="v-divider"></div>
 
           <div class="flex-h gap-lg w-full py-3xl j-content-center">
 
             <div class="w-auto">
-              <img width="100px" src="images/nlnet-logo.svg" alt="NLnet Foundation logo" />
+              <img class="w-100px" src="images/nlnet-logo.svg" alt="NLnet Foundation logo">
             </div>
             <div class="flex-v gap-xs p-14">
               <p>The NLnet Foundation</p>
@@ -174,7 +167,6 @@
 
         </div>
       </div>
-      
     </section>
 
     <section>
@@ -191,8 +183,8 @@
           <p>spreadsheet engine</p>
           <p><span class="grey-500">and</span> ecosystem.</p>
         </div>
-        <img class="max-w-440" src="images/ecosystem.svg" alt="Ecosystem icon" />
-      </div> 
+        <img class="max-w-440" src="images/ecosystem.svg" alt="Ecosystem icon">
+      </div>
     </section>
 
     <div class="h-divider"></div>
@@ -271,40 +263,40 @@
           <h2 class="ff-mozilla"><span class="grey-500">One engine,</span><br> many uses</h2>
           <p class="p-16 grey-700 text-pretty">Either as a standalone spreadsheet or as an embeddable product,<br> there are many ways in which IronCalc can be useful to you.</p>
         </div>
-        <div class="flex-h" style="gap: 1px; align-items: flex-start;" id="use-cases">
+        <div class="flex-h use-cases-row" id="use-cases">
           <div class="flex-v use-cases-buttons-wrap" id="use-cases-buttons">
             <button type="button" class="active" data-tab="0" aria-selected="true">
-              <p class="p-16 dark font-w-500">Everyday Spreadsheets</p>
-              <p>Budgets, lists, planning, tracking, and analysis with familiar spreadsheet features.</p>
+              <span class="p-16 dark font-w-500">Everyday Spreadsheets</span>
+              <span>Budgets, lists, planning, tracking, and analysis with familiar spreadsheet features.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
             <button type="button" data-tab="1" aria-selected="false">
-              <p class="p-16 dark font-w-500">Professional use</p>
-              <p>Forecasts, pricing, cost simulations, and scenario planning with reliable calculations.</p>
+              <span class="p-16 dark font-w-500">Professional use</span>
+              <span>Forecasts, pricing, cost simulations, and scenario planning with reliable calculations.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
             <button type="button" data-tab="2" aria-selected="false">
-              <p class="p-16 dark font-w-500">Embedded Engine</p>
-              <p>Add spreadsheet logic to SaaS apps or internal tools without external dependencies.</p>
+              <span class="p-16 dark font-w-500">Embedded Engine</span>
+              <span>Add spreadsheet logic to SaaS apps or internal tools without external dependencies.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
             <button type="button" data-tab="3" aria-selected="false">
-              <p class="p-16 dark font-w-500">Headless Calculations</p>
-              <p>Compute formulas, drive business rules, or process structured data programmatically.</p>
+              <span class="p-16 dark font-w-500">Headless Calculations</span>
+              <span>Compute formulas, drive business rules, or process structured data programmatically.</span>
             </button>
           </div>
           <div class="flex-v w-full outline-grey-300 container use-cases-right" id="use-cases-content">
             <div class="use-cases-panel active" data-panel="0" role="tabpanel">
-              <img class="full-width" src="images/usecase-projectracker.png" alt="Everyday Spreadsheets" />
+              <img class="full-width" src="images/usecase-projectracker.png" alt="Everyday Spreadsheets">
             </div>
             <div class="use-cases-panel" data-panel="1" role="tabpanel">
-              <img class="full-width" src="images/usecase-financialplan.png" alt="Professional use" />
+              <img class="full-width" src="images/usecase-financialplan.png" alt="Professional use">
             </div>
             <div class="use-cases-panel a-items-flex-end" data-panel="2" role="tabpanel">
-              <img class="full-width" src="images/usecase-timesheet.png" alt="Embedded Engine" />
+              <img class="full-width" src="images/usecase-timesheet.png" alt="Embedded Engine">
             </div>
             <div class="use-cases-panel" data-panel="3" role="tabpanel">
-              <img class="full-width" src="images/usecase-backendcalcs.png" alt="Headless Calculations" />
+              <img class="full-width" src="images/usecase-backendcalcs.png" alt="Headless Calculations">
             </div>
           </div>
         </div>
@@ -389,7 +381,7 @@
             <div class="terminal-window__tab-wrap">
             <div class="terminal-window__tab">
               <span class="terminal-window__tab-icon" aria-hidden="true">
-                <img src="images/docker-logo.svg" alt="Docker" />
+                <img src="images/docker-logo.svg" alt="Docker">
               </span>
               <a href="https://github.com/ironcalc/IronCalc/blob/main/docker-compose.yml" class="terminal-window__tab-label" target="_blank" rel="noopener noreferrer">docker-compose.yml</a>
             </div>
@@ -430,11 +422,11 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
-              <h3 class="w-full font-w-400 text-left">How is IronCalc different from Excel or Google Sheets?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">How is IronCalc different from Excel or Google Sheets?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-              <div class="grey-700 text-pretty py-0 pb-xl">
+            <div class="faq-item__content" id="faq-answer-1">
+              <div class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 <p>IronCalc differs in a few aspects, being the main ones:</p>
                 <ul class="list-disc pl-5 space-y-1">
                   <li>It’s fully open-source under MIT/Apache 2.0 licenses.</li>
@@ -450,10 +442,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
-              <h3 class="w-full font-w-400 text-left">Can IronCalc replace Excel?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Can IronCalc replace Excel?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+            <div class="faq-item__content" id="faq-answer-2">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 Not yet. The <a href="roadmap.html" target="_blank" rel="noopener noreferrer">roadmap</a> includes expanded compatibility with Excel formulas and features over time.
               </p>
@@ -464,10 +456,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
-              <h3 class="w-full font-w-400 text-left">Is IronCalc ready to use right now?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Is IronCalc ready to use right now?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+            <div class="faq-item__content" id="faq-answer-3">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 Yes! IronCalc is usable today and already supports hundreds of functions, import/export to .xlsx, stylistic formatting, and more. It’s still evolving toward version 1.0.
               </p>
@@ -478,11 +470,11 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
-              <h3 class="w-full font-w-400 text-left">What features are currently missing or planned?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">What features are currently missing or planned?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-              <div class="grey-700 text-pretty py-0 pb-xl">
+            <div class="faq-item__content" id="faq-answer-4">
+              <div class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 <p class="mb-2">IronCalc is in active development. Some features not yet supported or fully implemented include:</p>
                 <ul class="list-disc pl-5 space-y-1 ml-4">
                   <li>Charts.</li>
@@ -498,10 +490,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
-              <h3 class="w-full font-w-400 text-left">Can I embed IronCalc in my own application?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Can I embed IronCalc in my own application?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+            <div class="faq-item__content" id="faq-answer-6">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 Yes. IronCalc is designed to be embeddable in other applications and workflows, from web UIs to SaaS products, and via language bindings (Rust, JavaScript, Python, etc.).
               </p>
@@ -512,10 +504,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
-              <h3 class="w-full font-w-400 text-left">How do I import or export Excel files?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">How do I import or export Excel files?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+            <div class="faq-item__content" id="faq-answer-7">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 IronCalc supports importing and exporting .xlsx files so you can bring spreadsheets in and out while preserving formulas and data. See the <a href="https://docs.ironcalc.com/web-application/importing-files.html" target="_blank" rel="noopener noreferrer">documentation</a> for more details.
               </p>
@@ -526,10 +518,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
-              <h3 class="w-full font-w-400 text-left">Where are spreadsheets stored?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Where are spreadsheets stored?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+            <div class="faq-item__content" id="faq-answer-8">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 In the web app, spreadsheets are typically stored locally (e.g., in browser storage) unless you build additional server-side or cloud storage into your integration.
               </p>
@@ -540,10 +532,10 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-9" id="faq-question-9">
-              <h3 class="w-full font-w-400 text-left">Does IronCalc support collaboration and user accounts?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Does IronCalc support collaboration and user accounts?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-9" role="region" aria-labelledby="faq-question-9">
+            <div class="faq-item__content" id="faq-answer-9">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 Not yet. Real-time collaborative editing and user account systems are planned for future versions.
               </p>
@@ -554,14 +546,13 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-10" id="faq-question-10">
-              <h3 class="w-full font-w-400 text-left">I found a bug or want a feature. How do I contribute?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">I found a bug or want a feature. How do I contribute?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-10" role="region" aria-labelledby="faq-question-10">
+            <div class="faq-item__content" id="faq-answer-10">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 IronCalc is developed openly on <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">GitHub</a> and welcomes contributions. You can also join the community via email or <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord</a> to give feedback, report issues, or submit pull requests. See the <a href="https://github.com/ironcalc/IronCalc/?tab=contributing-ov-file" target="_blank" rel="noopener noreferrer">contributing guidelines</a> for more details.
               </p>
-            
             </div>
           </div>
 
@@ -569,20 +560,17 @@
 
           <div class="faq-item">
             <button type="button" class="faq-item__trigger flex-h gap-md w-full py-xl px-2xl" aria-expanded="false" aria-controls="faq-answer-11" id="faq-question-11">
-              <h3 class="w-full font-w-400 text-left">Can IronCalc run calculations outside the browser (e.g., server side)?</h3>
+              <span class="faq-item__title w-full font-w-400 text-left">Can IronCalc run calculations outside the browser (e.g., server side)?</span>
               <i data-lucide="plus" class="faq-item__icon lucide" aria-hidden="true"></i>
             </button>
-            <div class="faq-item__content" id="faq-answer-11" role="region" aria-labelledby="faq-question-11">
+            <div class="faq-item__content" id="faq-answer-11">
               <p class="grey-700 text-pretty py-0 px-2xl pb-xl">
                 Yes. The core engine works in Rust and can be used in server environments from programming languages such as Python, Rust, or JavaScript. See the <a href="https://docs.ironcalc.com/programming/about.html" target="_blank" rel="noopener noreferrer">documentation</a> for more details.
               </p>
             </div>
           </div>
 
-
         </div>
-        
-
 
       </div>
     </section>
@@ -596,9 +584,9 @@
     <section>
 
       <div class="w-1020 b-both" id="community-card-wrap">
-        <div class="card orange w-full" style="height: auto; width: auto;">
+        <div class="card orange card-auto">
           <div class="flex-h gap-xl w-full">
-            <img src="images/grid-left.svg" class="h-full" alt="" aria-hidden="true" />
+            <img src="images/grid-left.svg" class="h-full" alt="" aria-hidden="true">
             <div class="flex-v gap-lg px-2xl py-2xl w-full h-full a-items-center j-content-center text-center">
               <div class="flex-v gap-md">
                 <h3 class="ff-mozilla p-24">Community-driven</h3>
@@ -606,12 +594,12 @@
               </div>
               <div class="flex-h gap-sm">
                 <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer" class="button dark">
-                  <img src="images/discord-logo-color.svg" style="width: 20px" alt="Discord icon" />
+                  <img src="images/discord-logo-color.svg" class="w-20px" alt="Discord icon">
                   <p>Join us in Discord</p>
                 </a>
               </div>
             </div>
-            <img src="images/grid-right.svg" class="h-full" alt="" aria-hidden="true" />
+            <img src="images/grid-right.svg" class="h-full" alt="" aria-hidden="true">
           </div>
         </div>
       </div>
@@ -631,23 +619,23 @@
 
           <div class="flex-v gap-xs">
             <a href="index.html#scroll-up" aria-label="IronCalc home"
-              ><img src="images/ironcalc-logo.svg" style="width: 140px" alt="IronCalc logo" /></a>
-            <p class="grey-500 p-16 font-w-400" style="margin-left: 34px">
-              Open source<br />spreadsheet engine
+              ><img src="images/ironcalc-logo.svg" class="w-140px" alt="IronCalc logo"></a>
+            <p class="grey-500 p-16 font-w-400 ml-34">
+              Open source<br>spreadsheet engine
             </p>
           </div>
 
 
-          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start" style="margin-left: 34px;">
+          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start ml-34">
             <div class="flex-h j-content-center a-items-center gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: #003399; min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="images/eu-stars.svg" width="60%" alt="EU flag" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box">
+                <img src="images/eu-stars.svg" class="img-60pc" alt="EU flag">
               </div>
               <p>Horizon Europe programme</p>
             </div>
             <div class="flex-h gap-sm">
-              <div class="flex-h a-items-center j-content-center radius-xl" style="background-color: var(--grey-200); min-width: 36px; height: 36px; border: 1px solid var(--grey-300);">
-                <img src="images/nlnet-icon.svg" width="60%" alt="NLnet Foundation icon" />
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box-grey">
+                <img src="images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon">
               </div>
               <p>the NLnet foundation</p>
             </div>
@@ -659,9 +647,7 @@
           <div class="flex-v gap-sm w-140">
             <p class="font-w-600">Product</p>
             <a href="https://app.ironcalc.com/">App</a>
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank"
-              >Source code<i data-lucide="arrow-up-right" class="lucide" aria-hidden="true"></i></a
-              >
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">Source code<i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
             <a href="roadmap.html">Roadmap</a>
           </div>
           <div class="flex-v gap-sm w-140">
@@ -673,34 +659,29 @@
             <p class="font-w-600">Resources</p>
             <a href="https://docs.ironcalc.com/">Docs</a>
             <a href="https://blog.ironcalc.com/">Blog</a>
-            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank"
-              >Discord <i data-lucide="arrow-up-right" class="lucide" aria-hidden="true"></i></a
-            >
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
             <p>© 2026 IronCalc GmbH</p>
             <a href="legal/privacy.html">Privacy</a>
-            <a href="legal/impressum.html"
-            >Impressum</a
-            >
+            <a href="legal/impressum.html">Impressum</a>
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
-            <a href="https://github.com/ironcalc/ironcalc" target="_blank">
-              <img src="images/github-logo.svg" style="width: 16px" alt="GitHub icon" />
-              <p>GitHub</p>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">
+              <img src="images/github-logo.svg" class="w-20px" alt="GitHub icon">
+              <span>GitHub</span>
             </a>
-            <a href="https://bsky.app/profile/ironcalc.com" target="_blank">
-              <img src="images/bluesky-logo.svg" style="width: 16px" alt="Bluesky icon" />
-              <p>Bluesky</p>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon">
+              <span>Bluesky</span>
             </a>
           </div>
         </div>
-        
       </div>
     </div>
 
     <div class="w-1020 b-both footer-logo-xl-wrap">
-      <img class="footer-logo-xl" src="images/ironcalc-logo-xl.svg" style="width: 100%; display: block;" alt="IronCalc logo" />
+      <img class="footer-logo-xl block-w-full" src="images/ironcalc-logo-xl.svg" alt="IronCalc logo">
     </div>
 
     <div class="h-divider"></div>
@@ -719,28 +700,27 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on GitHub"
-              ><img src="images/github-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/github-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://discord.gg/zZYWfh3RHJ"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Discord"
-              ><img src="images/discord-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
             <a
               class="opacity-50"
               href="https://bsky.app/profile/ironcalc.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Bluesky"
-              ><img src="images/bluesky-logo.svg" style="width: 20px" alt="" aria-hidden="true"
-            /></a>
+              ><img src="images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
         </div>
       </div>
     </div>
-    
   </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
