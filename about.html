@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - IronCalc</title>
+    <meta
+    name="description"
+    content="Learn about IronCalc, the open-source spreadsheet engine."
+  >
+    <meta
+    name="keywords"
+    content="about, IronCalc, spreadsheet engine, open source"
+  >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="fonts.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favicon-32x32.png">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="About - IronCalc">
+    <meta
+    property="og:description"
+    content="Learn about IronCalc, the open-source spreadsheet engine."
+  >
+    <meta
+    property="og:image"
+    content="https://www.ironcalc.com/images/ironcalc-og.png"
+  >
+    <meta property="og:url" content="https://ironcalc.com/about">
+    <meta property="og:type" content="website">
+  </head>
+  <body id="about-page">
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container b-both">
+      <div class="logo w-200">
+        <a href="index.html#home" id="logo-link">
+          <img src="images/ironcalc-logo.svg" alt="IronCalc Logo">
+        </a>
+        <div id="logo-context-menu" class="context-menu" role="menu" hidden>
+          <button type="button" role="menuitem" id="logo-download-svg"><i data-lucide="download" class="lucide" aria-hidden="true"></i>Download logo as .svg</button>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html#about">Product</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="flex-h gap-sm w-200 j-content-flex-end">
+        <a
+          href="https://github.com/ironcalc/ironcalc"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button secondary github-star-btn"
+          aria-label="Star ironcalc/ironcalc on GitHub"
+        >
+          <img src="images/github-logo-dark.svg" alt="" width="18" height="18" aria-hidden="true">
+          <span class="github-star-count" aria-hidden="true">—</span>
+        </a>
+        <a
+          href="https://app.ironcalc.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+          id="join-waitlist-top"
+        >Try now</a>
+
+        <button type="button" id="menu-button" class="big-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <i data-lucide="menu" class="menu-icon" aria-hidden="true"></i>
+          <i data-lucide="x" class="close-icon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu flex-v" id="mobile-menu">
+    <div class="flex-v b-both px-lg h-full">
+      <a href="https://app.ironcalc.com" target="_blank" rel="noopener noreferrer">App</a>
+      <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Source code <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="about.html">Who we are</a>
+      <a href="mailto:hello@ironcalc.com">Contact</a>
+      <a href="https://docs.ironcalc.com/">Docs</a>
+      <a href="https://blog.ironcalc.com/">Blog</a>
+      <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer" class="flex-h gap-xs a-items-center">Community <i data-lucide="arrow-up-right" class="lucide lucide-20" aria-hidden="true"></i></a>
+
+      <div class="mobile-menu-footer flex-v gap-md">
+        <div class="flex-h gap-md flex-wrap">
+          <span>© 2026 IronCalc GmbH</span>
+          <div class="flex-h gap-md">
+            <a href="legal/privacy.html">Privacy</a>
+            <a href="legal/impressum.html">Impressum</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">Bluesky</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <a href="#about-page" id="scroll-up" class="hidden back-to-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about-content">
+      <div class="w-1020 b-both px-3xl py-3xl flex-v a-items-center">
+        <div class="flex-v gap-lg text-pretty max-w-440 double">
+          <h2 class="ff-mozilla font-w-500">Why IronCalc?</h2>
+          <p>Since the days of <a href="https://en.wikipedia.org/wiki/VisiCalc" target="_blank" rel="noopener noreferrer">VisiCalc</a> -over 45 years ago- spreadsheets have been an essential application on our computers. But despite numerous proprietary and open-source options, finding a universally accessible, reliable, and high-quality engine remains a challenge today. Many existing solutions are expensive, require accounts, suffer from performance and stability issues or are not ready for the modern web.</p>
+          <p>We think there’s room for something better.</p>
+          <p>Whether you're building a SaaS platform, automating spreadsheet processing at scale, enabling real-time collaboration, or adding interactive spreadsheets to a blog or dashboard, IronCalc is designed to be simple to integrate, easy to scale, and friendly for developers and users alike.</p>
+          <p>We’re not just building another tool; we’re trying to contribute to the future of spreadsheet technology.</p>
+          <div class="flex-h gap-sm a-items-center">
+            <div class="avatar-wrap">
+              <span class="avatar-tooltip-wrap">
+                <span class="avatar-tooltip">nhatcher</span>
+                <a href="https://www.nhatcher.com/" target="_blank" rel="noopener noreferrer"><img src="images/avatar-nhatcher.jpg" class="avatar" alt="nhatcher"></a>
+              </span>
+              <span class="avatar-tooltip-wrap">
+                <span class="avatar-tooltip">dg-ac</span>
+                <a href="https://www.dg-ac.com/" target="_blank" rel="noopener noreferrer"><img src="images/avatar-dgac.jpeg" class="avatar" alt="dg-ac"></a>
+              </span>
+            </div>
+            <p class="grey-500">The IronCalc Team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="h-divider"></div>
+
+    <section class="white">
+      <div class="w-1020 b-both flex-v a-items-center px-3xl py-3xl">
+
+          <div class="flex-v gap-2xl text-pretty max-w-440">
+
+            <h2 class="ff-mozilla font-w-500">Sponsors</h2>
+
+            <div class="flex-v gap-md">
+              <div class="logo-wrap">
+                <img src="images/eu-logo.svg" alt="European Commission logo">
+              </div>
+              <p class="lh-160">
+                IronCalc is part of the ELFA consortium (Encrypted Local-First Architecture), a project that was awarded a Horizon Europe grant from the European Commission in early 2026 under HORIZON CL4-2025-03-HUMAN-16, Area 4, with the goal of developing alternative solutions to centralised platforms.
+              </p>
+              <p class="grey-500 lh-160">Grant Agreement No: HORIZON-CL4-2025-03-HUMAN-16</p>
+              <a class="button dark fit-content" href="https://elfaconsortium.eu/" target="_blank" rel="noopener noreferrer">See the consortium page <i data-lucide="arrow-up-right" class="lucide"></i></a>
+            </div>
+
+            <div class="flex-v gap-md">
+              <div class="logo-wrap">
+                <img src="images/nlnet-logo.svg" alt="NLnet Foundation logo">
+              </div>
+              <p class="lh-160">
+                This project is funded through the <a href="https://NLnet.nl/entrust" target="_blank" rel="noopener noreferrer">NGI0 Entrust Fund</a>, a fund established by NLnet with financial support from the European Commission's <a href="https://ngi.eu/" target="_blank" rel="noopener noreferrer">Next Generation Internet</a> program, under the aegis of DG Communications Networks, Content and Technology.
+              </p>
+              <p class="grey-500 lh-160">Grant Agreement No: 101092990</p>
+              <a class="button dark fit-content" href="https://NLnet.nl/project/IronCalc/" target="_blank" rel="noopener noreferrer">See the project page <i data-lucide="arrow-up-right" class="lucide"></i></a>
+            </div>
+
+          </div>
+
+      </div>
+    </section>
+
+    <div class="h-divider"></div>
+
+    <section class="white">
+      <div class="w-1020 b-both flex-v a-items-center px-3xl py-3xl">
+        <div class="flex-v gap-xl text-pretty max-w-440">
+          <h2 class="ff-mozilla font-w-500">Contributing</h2>
+          <p>IronCalc is developed openly on <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">GitHub</a> and welcomes contributions. See the <a href="https://github.com/ironcalc/IronCalc/?tab=contributing-ov-file" target="_blank" rel="noopener noreferrer">contributing guidelines</a> for more details.</p>
+          <p>You can also join our community in <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Discord</a> and give feedback, ask questions, run ideas or just say hi. We are also present on <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">Bluesky</a> and <a href="https://fosstodon.org/@ironcalc" target="_blank" rel="noopener noreferrer">Mastodon</a>.</p>
+
+          <p>We thank <a href="https://github.com/ironcalc/IronCalc/graphs/contributors" target="_blank" rel="noopener noreferrer">our contributors</a> for their help and support!</p>
+
+          <div id="contributors-avatars" class="contributors-avatars">
+            <span class="contributors-loading" aria-hidden="true">Loading contributors…</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="h-divider"></div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="w-1020 b-both">
+      <div class="flex-h j-content-space-between a-items-flex-start gap-sm py-3xl px-2xl">
+
+        <div class="flex-v gap-2xl" id="footer-logo">
+
+          <div class="flex-v gap-xs">
+            <a href="index.html#scroll-up" aria-label="IronCalc home">
+              <img src="images/ironcalc-logo.svg" class="w-140px" alt="IronCalc Logo">
+            </a>
+            <p class="grey-500 p-16 font-w-400 ml-34">
+              Open source<br>spreadsheet engine
+            </p>
+          </div>
+
+
+          <div class="flex-v gap-sm w-140 nowrap a-items-flex-start ml-34">
+            <div class="flex-h j-content-center a-items-center gap-sm">
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box">
+                <img src="images/eu-stars.svg" class="img-60pc" alt="EU flag">
+              </div>
+              <p>Horizon Europe programme</p>
+            </div>
+            <div class="flex-h gap-sm">
+              <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box-grey">
+                <img src="images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon">
+              </div>
+              <p>the NLnet foundation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="flex-v gap-sm w-140">
+            <p class="font-w-600">Product</p>
+            <a href="https://app.ironcalc.com/">App</a>
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">Source code</a>
+            <a href="roadmap.html">Roadmap</a>
+          </div>
+          <div class="flex-v gap-sm w-140">
+            <p class="font-w-600">About</p>
+            <a href="about.html">Who we are</a>
+            <a href="mailto:hello@ironcalc.com">Contact</a>
+          </div>
+          <div class="flex-v gap-sm w-140">
+            <p class="font-w-600">Resources</p>
+            <a href="https://docs.ironcalc.com/">Docs</a>
+            <a href="https://blog.ironcalc.com/">Blog</a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">Community</a>
+          </div>
+          <div class="flex-v gap-sm w-140 footer-mobile-only">
+            <p>© 2026 IronCalc GmbH</p>
+            <a href="legal/privacy.html">Privacy</a>
+            <a href="legal/impressum.html">Impressum</a>
+          </div>
+          <div class="flex-v gap-sm w-140 footer-mobile-only">
+            <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">
+              <img src="images/github-logo.svg" class="w-20px" alt="GitHub icon">
+              <span>GitHub</span>
+            </a>
+            <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">
+              <img src="images/discord-logo.svg" class="w-20px" alt="Discord icon">
+              <span>Discord</span>
+            </a>
+            <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">
+              <img src="images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon">
+              <span>Bluesky</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="w-1020 b-both footer-logo-xl-wrap">
+      <img class="footer-logo-xl block-w-full" src="images/ironcalc-logo-xl.svg" alt="IronCalc logo">
+    </div>
+
+    <div class="h-divider"></div>
+
+    <div class="w-1020 b-both" id="footer-legal">
+      <div class="flex-h j-content-space-between gap-sm py-base px-2xl a-items-center grey-500 p-12">
+        <div class="flex-h gap-md">
+          <p>© 2026 IronCalc GmbH</p>
+          <a href="legal/privacy.html">Privacy</a>
+          <a href="legal/impressum.html">Impressum</a>
+        </div>
+        <div class="flex-h gap-md a-items-center">
+          <a
+              class="opacity-50"
+              href="https://github.com/ironcalc/ironcalc"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="IronCalc on GitHub"
+              ><img src="images/github-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
+            <a
+              class="opacity-50"
+              href="https://discord.gg/zZYWfh3RHJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="IronCalc on Discord"
+              ><img src="images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
+            <a
+              class="opacity-50"
+              href="https://bsky.app/profile/ironcalc.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="IronCalc on Bluesky"
+              ><img src="images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true"
+            ></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
