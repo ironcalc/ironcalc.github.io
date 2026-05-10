@@ -13,6 +13,11 @@
     content="IronCalc, legal, imprint, contact"
   >
 
+    <!-- Preload critical fonts to break the fonts.css dependency chain -->
+    <link rel="preload" href="../fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/inter-v18-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/MozillaHeadline-Medium.ttf" as="font" type="font/truetype" crossorigin>
+
     <!-- Styles -->
     <link rel="stylesheet" href="../styles.css?v=1">
     <link rel="stylesheet" href="../fonts.css">
@@ -39,7 +44,7 @@
     <div class="nav-container b-both">
       <div class="logo w-200">
         <a href="../index.html#home" id="logo-link">
-          <img src="../images/ironcalc-logo.svg" alt="IronCalc Logo">
+          <img src="../images/ironcalc-logo.svg" alt="IronCalc Logo" width="137" height="24">
         </a>
         <div id="logo-context-menu" class="context-menu" role="menu" hidden>
           <button type="button" role="menuitem" id="logo-download-svg"><i data-lucide="download" class="lucide" aria-hidden="true"></i>Download logo as .svg</button>
@@ -164,7 +169,7 @@
 
           <div class="flex-v gap-xs">
             <a href="../index.html#scroll-up" aria-label="IronCalc home"
-              ><img src="../images/ironcalc-logo.svg" class="w-140px" alt="IronCalc logo"
+              ><img src="../images/ironcalc-logo.svg" class="w-140px" alt="IronCalc logo" width="137" height="24"
             ></a>
             <p class="grey-500 p-16 font-w-400 ml-34">
               Open source<br>spreadsheet engine
@@ -175,13 +180,13 @@
           <div class="flex-v gap-sm w-140 nowrap a-items-flex-start ml-34">
             <div class="flex-h j-content-center a-items-center gap-sm">
               <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box">
-                <img src="../images/eu-stars.svg" class="img-60pc" alt="EU flag">
+                <img src="../images/eu-stars.svg" class="img-60pc" alt="EU flag" width="20" height="20">
               </div>
               <p>Horizon Europe programme</p>
             </div>
             <div class="flex-h gap-sm">
               <div class="flex-h a-items-center j-content-center radius-xl footer-badge-box-grey">
-                <img src="../images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon">
+                <img src="../images/nlnet-icon.svg" class="img-60pc" alt="NLnet Foundation icon" width="16" height="16">
               </div>
               <p>the NLnet foundation</p>
             </div>
@@ -214,15 +219,15 @@
           </div>
           <div class="flex-v gap-sm w-140 footer-mobile-only">
             <a href="https://github.com/ironcalc/ironcalc" target="_blank" rel="noopener noreferrer">
-              <img src="../images/github-logo.svg" class="w-20px" alt="GitHub icon">
+              <img src="../images/github-logo.svg" class="w-20px" alt="GitHub icon" width="100" height="98">
               <span>GitHub</span>
             </a>
             <a href="https://discord.gg/zZYWfh3RHJ" target="_blank" rel="noopener noreferrer">
-              <img src="../images/discord-logo.svg" class="w-20px" alt="Discord icon">
+              <img src="../images/discord-logo.svg" class="w-20px" alt="Discord icon" width="100" height="78">
               <span>Discord</span>
             </a>
             <a href="https://bsky.app/profile/ironcalc.com" target="_blank" rel="noopener noreferrer">
-              <img src="../images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon">
+              <img src="../images/bluesky-logo.svg" class="w-20px" alt="Bluesky icon" width="100" height="89">
               <span>Bluesky</span>
             </a>
           </div>
@@ -232,7 +237,7 @@
     </div>
 
     <div class="w-1020 b-both footer-logo-xl-wrap">
-      <img class="footer-logo-xl block-w-full" src="../images/ironcalc-logo-xl.svg" alt="IronCalc logo">
+      <img class="footer-logo-xl block-w-full" src="../images/ironcalc-logo-xl.svg" alt="IronCalc logo" width="1019" height="179">
     </div>
 
     <div class="h-divider"></div>
@@ -251,7 +256,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on GitHub"
-              ><img src="../images/github-logo.svg" class="w-20px" alt="" aria-hidden="true"
+              ><img src="../images/github-logo.svg" class="w-20px" alt="" aria-hidden="true" width="100" height="98"
             ></a>
             <a
               class="opacity-50"
@@ -259,7 +264,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Discord"
-              ><img src="../images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true"
+              ><img src="../images/discord-logo.svg" class="w-20px" alt="" aria-hidden="true" width="100" height="78"
             ></a>
             <a
               class="opacity-50"
@@ -267,7 +272,7 @@
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IronCalc on Bluesky"
-              ><img src="../images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true"
+              ><img src="../images/bluesky-logo.svg" class="w-20px" alt="" aria-hidden="true" width="100" height="89"
             ></a>
         </div>
       </div>
