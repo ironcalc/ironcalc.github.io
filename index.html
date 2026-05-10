@@ -264,38 +264,38 @@
           <p class="p-16 grey-700 text-pretty">Either as a standalone spreadsheet or as an embeddable product,<br> there are many ways in which IronCalc can be useful to you.</p>
         </div>
         <div class="flex-h use-cases-row" id="use-cases">
-          <div class="flex-v use-cases-buttons-wrap" id="use-cases-buttons">
-            <button type="button" class="active" data-tab="0" aria-selected="true">
+          <div class="flex-v use-cases-buttons-wrap" id="use-cases-buttons" role="tablist" aria-label="Use cases">
+            <button type="button" role="tab" class="active" data-tab="0" aria-selected="true" aria-controls="use-cases-panel-0" id="use-cases-tab-0">
               <span class="p-16 dark font-w-500">Everyday Spreadsheets</span>
               <span>Budgets, lists, planning, tracking, and analysis with familiar spreadsheet features.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
-            <button type="button" data-tab="1" aria-selected="false">
+            <button type="button" role="tab" data-tab="1" aria-selected="false" aria-controls="use-cases-panel-1" id="use-cases-tab-1">
               <span class="p-16 dark font-w-500">Professional use</span>
               <span>Forecasts, pricing, cost simulations, and scenario planning with reliable calculations.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
-            <button type="button" data-tab="2" aria-selected="false">
+            <button type="button" role="tab" data-tab="2" aria-selected="false" aria-controls="use-cases-panel-2" id="use-cases-tab-2">
               <span class="p-16 dark font-w-500">Embedded Engine</span>
               <span>Add spreadsheet logic to SaaS apps or internal tools without external dependencies.</span>
             </button>
             <div class="use-cases-divider" aria-hidden="true"></div>
-            <button type="button" data-tab="3" aria-selected="false">
+            <button type="button" role="tab" data-tab="3" aria-selected="false" aria-controls="use-cases-panel-3" id="use-cases-tab-3">
               <span class="p-16 dark font-w-500">Headless Calculations</span>
               <span>Compute formulas, drive business rules, or process structured data programmatically.</span>
             </button>
           </div>
           <div class="flex-v w-full outline-grey-300 container use-cases-right" id="use-cases-content">
-            <div class="use-cases-panel active" data-panel="0" role="tabpanel">
+            <div class="use-cases-panel active" data-panel="0" role="tabpanel" id="use-cases-panel-0" aria-labelledby="use-cases-tab-0">
               <img class="full-width" src="images/usecase-projectracker.png" alt="Everyday Spreadsheets">
             </div>
-            <div class="use-cases-panel" data-panel="1" role="tabpanel">
+            <div class="use-cases-panel" data-panel="1" role="tabpanel" id="use-cases-panel-1" aria-labelledby="use-cases-tab-1">
               <img class="full-width" src="images/usecase-financialplan.png" alt="Professional use">
             </div>
-            <div class="use-cases-panel a-items-flex-end" data-panel="2" role="tabpanel">
+            <div class="use-cases-panel a-items-flex-end" data-panel="2" role="tabpanel" id="use-cases-panel-2" aria-labelledby="use-cases-tab-2">
               <img class="full-width" src="images/usecase-timesheet.png" alt="Embedded Engine">
             </div>
-            <div class="use-cases-panel" data-panel="3" role="tabpanel">
+            <div class="use-cases-panel" data-panel="3" role="tabpanel" id="use-cases-panel-3" aria-labelledby="use-cases-tab-3">
               <img class="full-width" src="images/usecase-backendcalcs.png" alt="Headless Calculations">
             </div>
           </div>
