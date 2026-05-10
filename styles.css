@@ -76,6 +76,10 @@ a:hover {
   text-decoration: underline;
 }
 
+p a {
+  text-decoration: underline;
+}
+
 a .dark {
   color: var(--dark);
 }
@@ -151,11 +155,15 @@ img {
 }
 
 .grey-500 {
+  color: var(--grey-700);
+}
+
+section.dark .grey-500 {
   color: var(--grey-500);
 }
 
 .grey-600 {
-  color: var(--grey-600);
+  color: var(--grey-700);
 }
 
 .grey-700 {
@@ -785,7 +793,7 @@ a.back-to-top:hover {
 }
 
 .badge-info {
-  color: var(--grey-600);
+  color: var(--grey-700);
   font-size: 12px;
   text-align: center;
   max-width: 460px;
@@ -1113,7 +1121,7 @@ header.no-bg {
 
 .hero-text h2 {
   font-size: 24px;
-  color: var(--info-main);
+  color: var(--grey-700);
   font-weight: 300;
   line-height: 140%;
 }
@@ -1278,11 +1286,10 @@ section.grey {
 }
 
 .roadmap-card.completed .roadmap-card__title span {
-  color: var(--primary-main);
-  font-size: 12px;
-  font-weight: 400;
+  color: var(--primary-contrastText);
+  background-color: var(--primary-main);
+  font-weight: 500;
   margin-left: 4px;
-  background-color: color-mix(in srgb, var(--primary-main) 24%, transparent);
   padding: 3px 6px;
   border-radius: 12px;
   text-transform: uppercase;
@@ -1378,11 +1385,11 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 8px;
-  color: var(--info-dark);
+  color: var(--grey-700);
 }
 
 .footer-nav .lucide {
-  color: var(--info-dark);
+  color: var(--grey-700);
   width: 14px;
   height: 14px;
 }
@@ -1604,7 +1611,7 @@ h4 {
   background: none;
   outline: 1px solid var(--grey-300);
   border-radius: 0px;
-  color: var(--info-main);
+  color: var(--grey-700);
   font-size: 14px;
   text-align: left;
   padding: 24px;
@@ -1845,9 +1852,9 @@ h4 {
   cursor: pointer;
 }
 
-/* Legal page sidebar nav: links grey-500, active page dark */
+/* Legal page sidebar nav */
 .legal-layout-sidebar a {
-  color: var(--grey-500);
+  color: var(--grey-700);
 }
 .legal-layout-sidebar a[aria-current="page"] {
   color: var(--dark);
@@ -1864,7 +1871,7 @@ h4 {
 }
 
 #privacy-page .legal-layout-content h3 {
-  color: var(--grey-500);
+  color: var(--grey-700);
 }
 
 #privacy-page .legal-layout-content ul {
@@ -2712,6 +2719,11 @@ a.github-star-btn img {
   height: fit-content;
   align-self: start;
   z-index: 10;
+}
+
+.roadmap-left a {
+  color: var(--dark);
+  text-decoration: underline;
 }
 
 .roadmap-left h2.sticky {
