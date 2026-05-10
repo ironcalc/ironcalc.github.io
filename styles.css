@@ -3044,3 +3044,18 @@ a.terminal-window__tab-label:hover {
   object-fit: cover;
   vertical-align: middle;
 }
+
+.page-404-main {
+  min-height: 100vh;
+}
+
+.page-404-number {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--grey-300);
+}
+
+.page-404-title {
+  font-size: 2rem;
+}
