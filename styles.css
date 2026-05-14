@@ -1623,7 +1623,8 @@ h4 {
   transition: none;
 }
 
-#use-cases button p {
+#use-cases button p,
+#use-cases button span {
   min-width: 0;
   overflow-wrap: break-word;
   text-wrap: wrap;
