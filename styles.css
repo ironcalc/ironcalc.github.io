@@ -177,7 +177,7 @@ section.dark .grey-500 {
 /* font-family */
 
 .ff-mozilla {
-  font-family: "Mozilla Headline", sans-serif;
+  font-family: "Mozilla Headline", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* font-weight */
@@ -1862,11 +1862,11 @@ h4 {
 }
 
 #privacy-page .legal-layout-content h1 {
-  font-family: "Mozilla Headline", sans-serif;
+  font-family: "Mozilla Headline", "Helvetica Neue", Arial, sans-serif;
 }
 
 #privacy-page .legal-layout-content h2 {
-  font-family: "Mozilla Headline", sans-serif;
+  font-family: "Mozilla Headline", "Helvetica Neue", Arial, sans-serif;
   font-size: 22px;
   line-height: 110%;
 }
