@@ -114,6 +114,10 @@
         <h2 class="small text-pretty grey-500 font-w-300">
           IronCalc is constantly evolving<br>as we work to make it better and more powerful
         </h2>
+        <div class="flex-h gap-md a-items-center roadmap-legend">
+          <span class="flex-h gap-xs a-items-center"><span class="roadmap-legend-dot roadmap-legend-dot--released" aria-hidden="true"></span>Released</span>
+          <span class="flex-h gap-xs a-items-center"><span class="roadmap-legend-dot roadmap-legend-dot--wip" aria-hidden="true"></span>WIP</span>
+        </div>
       </div>
     </div>
   </header>
@@ -134,43 +138,99 @@
           <div class="h-divider h-divider--mobile-only" aria-hidden="true"></div>
 
           <div class="flex-v gap-md w-70pc px-2xl py-3xl">
+
                 <div class="roadmap-card roadmap-card--expandable flex-v">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="users" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Collaborative editing <span class="badge-wip">WIP</span></span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-11" aria-hidden="true">
+                    <p>Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution (CRDTs).</p>
+                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/349" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                  </div>
+                </div>
+
+                <div class="roadmap-card roadmap-card--expandable flex-v">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="bar-chart-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Charts</span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-10" aria-hidden="true">
+                    <p>Adding various chart types (e.g., bar, line, pie) to visualize and understand data. Charts make spreadsheets beautiful.</p>
+                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/348" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                  </div>
+                </div>
+
+                 <div class="roadmap-card roadmap-card--expandable flex-v">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="moon" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Dark mode <span class="badge-wip">WIP</span></span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-10" aria-hidden="true">
+                    <p>A dark color scheme for the whole interface, including the grid!</p>
+                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/348" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                  </div>
+                </div>
+
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="braces" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <span class="roadmap-card__title font-w-500">Support for array formulas, dynamic arrays and LAMBDA</span>
+                    <span class="roadmap-card__title font-w-500">Support for array formulas, dynamic arrays and LAMBDA <span>v0.8</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-1" aria-hidden="true">
                     <p class="grey-700">Arrays and array formulas are vital components of any spreadsheet engine. Dynamic arrays—a recent innovation from Microsoft Excel—are implemented by very few engines, yet they offer tremendous utility.</p>
-                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/15" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
                   </div>
                 </div>
 
-                <div class="roadmap-card roadmap-card--expandable flex-v">
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="sigma" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <span class="roadmap-card__title font-w-500">Implement 90% of Excel functions</span>
+                    <span class="roadmap-card__title font-w-500">Implement 90% of Excel functions <span>v0.8</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-3" aria-hidden="true">
                     <p>Although IronCalc already supports a good number of functions, we aim to support all of them.</p>
-                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues?q=is%3Aissue%20state%3Aopen%20label%3AFunctions" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
                   </div>
                 </div>
 
-                <div class="roadmap-card roadmap-card--expandable flex-v">
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
-                    <i data-lucide="palette" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <span class="roadmap-card__title font-w-500">Conditional formatting</span>
+                    <i data-lucide="brush" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Conditional formatting <span>v0.8</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-5" aria-hidden="true">
                     <p>Visual formatting to cells based on their values, making it easier to identify trends, outliers, and important data at a glance.</p>
-                    <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/63" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
+                  </div>
+                </div>
+
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="swatch-book" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Themes <span>v0.8</span></span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-1" aria-hidden="true">
+                    <p class="grey-700">A coordinated set of colors and fonts applied workbook-wide, so cell styles, charts, and conditional formatting stay visually consistent and can be switched in one click.</p>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
+                  </div>
+                </div>
+
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="layers" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Cell styles <span>v0.8</span></span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-18" aria-hidden="true">
+                    <p>Define and reuse named cell styles for fonts, colors, borders, and number formats, so consistent formatting can be applied across a workbook in a single click.</p>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
                   </div>
                 </div>
 
                 <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="globe" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <span class="roadmap-card__title font-w-500">Internationalization and Localization <span>done</span></span>
+                    <span class="roadmap-card__title font-w-500">Internationalization and Localization <span>v0.7</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-2" aria-hidden="true">
                     <p>The engine and Web application will support three different languages (English, German and French) and a variety of locales. These settings affect how dates, times, currencies, numbers, and other region-specific formats are displayed. They also determine the default language used for functions and the user interface.</p>
@@ -180,8 +240,19 @@
 
                 <div class="roadmap-card roadmap-card--expandable flex-v completed">
                   <div class="roadmap-card__header flex-h gap-md a-items-center">
+                    <i data-lucide="grip" class="lucide roadmap-card-icon" aria-hidden="true"></i>
+                    <span class="roadmap-card__title font-w-500">Autofill<span>v0.7</span></span>
+                  </div>
+                  <div class="roadmap-card-details" id="roadmap-card-details-4" aria-hidden="true">
+                    <p>Drag the fill handle across adjacent cells to extend a pattern automatically.</p>
+                    <a tabindex="-1" href="https://app.ironcalc.com/" target="_blank" rel="noopener noreferrer">Try it now</a>
+                  </div>
+                </div>
+
+                <div class="roadmap-card roadmap-card--expandable flex-v completed">
+                  <div class="roadmap-card__header flex-h gap-md a-items-center">
                     <i data-lucide="tags" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                    <span class="roadmap-card__title font-w-500">Named Ranges<span>done</span></span>
+                    <span class="roadmap-card__title font-w-500">Named Ranges<span>v0.7</span></span>
                   </div>
                   <div class="roadmap-card-details" id="roadmap-card-details-4" aria-hidden="true">
                     <p>Named ranges allow you to create custom names for cell ranges, making it easier to reference and manipulate specific data sets within a spreadsheet.</p>
@@ -204,17 +275,6 @@
           <div class="h-divider h-divider--mobile-only" aria-hidden="true"></div>
 
           <div class="flex-v gap-sm w-70pc px-2xl py-3xl">
-
-            <div class="roadmap-card roadmap-card--expandable flex-v">
-              <div class="roadmap-card__header flex-h gap-md a-items-center">
-                <i data-lucide="bar-chart-2" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <span class="roadmap-card__title font-w-500">Charts</span>
-              </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-10" aria-hidden="true">
-                <p>Adding various chart types (e.g., bar, line, pie) to visualize and understand data. Charts make spreadsheets beautiful.</p>
-                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/348" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </div>
-            </div>
 
             <div class="roadmap-card roadmap-card--expandable flex-v">
               <div class="roadmap-card__header flex-h gap-md a-items-center">
@@ -257,17 +317,6 @@
               <div class="roadmap-card-details" id="roadmap-card-details-9" aria-hidden="true">
                 <p>To improve layout presentation and readability and compatibility.</p>
                 <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/61" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-              </div>
-            </div>
-
-            <div class="roadmap-card roadmap-card--expandable flex-v">
-              <div class="roadmap-card__header flex-h gap-md a-items-center">
-                <i data-lucide="users" class="lucide roadmap-card-icon" aria-hidden="true"></i>
-                <span class="roadmap-card__title font-w-500">Collaborative editing</span>
-              </div>
-              <div class="roadmap-card-details" id="roadmap-card-details-11" aria-hidden="true">
-                <p>Enable real-time collaboration where multiple users can work on the same spreadsheet simultaneously with live updates and conflict resolution (CRDTs).</p>
-                <a tabindex="-1" href="https://github.com/ironcalc/IronCalc/issues/349" target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </div>
             </div>
 
