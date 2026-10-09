@@ -712,72 +712,35 @@ a.back-to-top:hover {
   background-color: var(--grey-100);
 }
 
-/* badges */
+/* Excel feature list: wrapping chips */
+#features {
+  scroll-margin-top: 64px; /* clear the sticky nav */
+}
 
-.badge {
+.feature-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list li {
   padding: 12px 16px;
   border-radius: 9999px;
-  background-color: var(--grey-100);
-  color: var(--grey-700);
-  transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
-}
-
-.badge:hover {
-  border: 1px solid var(--grey-300);
-  background-color: var(--grey-200);
-  cursor: default;
+  background-color: var(--grey-100);
+  white-space: nowrap;
   transition: all 0.2s ease-in-out;
 }
 
-/* Excel roadmap badge grid (6 rows); fade at top/bottom via mask */
-.excel-roadmap-badges {
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(6, auto);
-  gap: 8px;
-  margin: -20px 0px -20px -20px;
-  max-height: 320px; /* ~6 rows (badge + gap) */
-  overflow-y: auto;
-  justify-content: flex-end;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 82%, transparent 100%);
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.feature-list li:hover {
+  border-color: var(--grey-300);
+  background-color: var(--grey-200);
 }
 
-.excel-roadmap-badges::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to bottom, white, transparent);
-  pointer-events: none;
-  z-index: 1;
-}
-.excel-roadmap-badges__row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.excel-roadmap-badges__row:nth-child(1) { margin-right: 120px; }
-.excel-roadmap-badges__row:nth-child(2) { margin-right: 80px; }
-.excel-roadmap-badges__row:nth-child(3) { margin-right: 40px; }
-.excel-roadmap-badges__row:nth-child(4) { margin-right: 0; }
-.excel-roadmap-badges__row:nth-child(5) { margin-right: 40px; }
-.excel-roadmap-badges__row:nth-child(6) { margin-right: 80px; }
+/* badges */
 
 .badge-white {
   display: flex;
@@ -2050,27 +2013,17 @@ h4 {
 @media only screen and (max-width: 800px) {
   /* for tablets */
 
-  .badge {
-    font-size: 9px;
+  #features {
+    padding: 40px 20px;
   }
 
-  /* Excel roadmap: two columns → vertical stack only below 800px */
-  #excel-roadmap-wrap {
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
+  .feature-list {
+    gap: 6px;
   }
 
-  #excel-roadmap-wrap .w-50pc:first-child {
-    width: 100%;
-    margin-right: 0;
-    padding: 24px 0 0 0;
-  }
-
-  #excel-roadmap-wrap .w-50pc:last-child {
-    width: 100%;
-    padding: 24px 24px;
-    order: -1;
+  .feature-list li {
+    padding: 6px 10px;
+    font-size: 13px;
   }
 
   /* Legal page: sidebar on top, content below */
@@ -2088,33 +2041,6 @@ h4 {
   }
   .legal-layout-content {
     width: 100%;
-  }
-
-  /* Badges distribute along the space; max 3 rows on narrow; wider than container so sides are cropped */
-  section.white .flex-h.b-both.w-1020 .excel-roadmap-badges {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    max-height: 126px; /* ~3 rows (badge + gap) */
-    overflow: hidden;
-    grid-template-rows: unset;
-    width: 160% !important;
-    margin-left: -30%;
-    margin-top: -20px;
-    -webkit-mask-image: none;
-    mask-image: none;
-  }
-
-  section.white .flex-h.b-both.w-1020 .excel-roadmap-badges__row {
-    display: contents;
-  }
-
-  section.white .flex-h.b-both.w-1020 .excel-roadmap-badges .badge {
-    padding: 8px 12px;
-    font-size: 13px;
   }
 
   .nav-container ul {
